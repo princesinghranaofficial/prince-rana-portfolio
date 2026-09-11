@@ -1,7 +1,15 @@
 /**
- * Centralized Analytics Events Abstraction
- * Privacy-friendly, lightweight event tracking.
+ * Centralized Analytics Events Abstraction & GA4 Integration
+ * Privacy-friendly, lightweight event tracking with strict zero-PII guarantees.
  */
+
+declare global {
+  interface Window {
+    dataLayer?: unknown[];
+    gtag?: (command: string, ...args: unknown[]) => void;
+    [key: `ga-disable-${string}`]: boolean | undefined;
+  }
+}
 
 export type AnalyticsEvent =
   | 'hero_book_call_clicked'
@@ -86,13 +94,66 @@ export interface AnalyticsPayload {
   [key: string]: string | number | boolean | undefined;
 }
 
+/**
+ * PII blacklist: Keys that must never be sent to analytics under any circumstances.
+ */
+const PII_BLACKLIST = new Set([
+  'name',
+  'fullname',
+  'firstname',
+  'lastname',
+  'email',
+  'useremail',
+  'user_email',
+  'phone',
+  'phonenumber',
+  'phone_number',
+  'message',
+  'description',
+  'password',
+  'token',
+  'secret',
+  'auth',
+  'authorization',
+]);
+
+/**
+ * Safely send an event to Google Analytics 4 (gtag.js)
+ * Guarantees zero PII and fails silently without interrupting UI execution.
+ */
+export function sendGAEvent(eventName: string, params?: Record<string, unknown>) {
+  if (typeof window === 'undefined') return;
+
+  try {
+    const cleanParams: Record<string, unknown> = {};
+
+    if (params) {
+      for (const [key, val] of Object.entries(params)) {
+        if (!PII_BLACKLIST.has(key.toLowerCase()) && val !== undefined) {
+          cleanParams[key] = val;
+        }
+      }
+    }
+
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, cleanParams);
+    }
+  } catch (err) {
+    if (process.env.NODE_ENV === 'development') {
+      console.warn('[GA4 Safe Failure]:', err);
+    }
+  }
+}
+
+/**
+ * Central event tracking function
+ */
 export function trackEvent(event: AnalyticsEvent, payload?: AnalyticsPayload) {
   if (process.env.NODE_ENV === 'development') {
-    // eslint-disable-next-line no-console
     console.log(`[Analytics] ${event}`, payload ?? {});
   }
 
-  // Safe window custom event dispatch
+  // Safe window custom event dispatch for in-app listeners
   if (typeof window !== 'undefined') {
     window.dispatchEvent(
       new CustomEvent('app:analytics', {
@@ -100,4 +161,149 @@ export function trackEvent(event: AnalyticsEvent, payload?: AnalyticsPayload) {
       })
     );
   }
+
+  // Map internal actions to GA4 conversion & engagement events
+  switch (event) {
+    case 'inquiry_started':
+      sendGAEvent('contact_form_start');
+      break;
+
+    case 'inquiry_completed':
+      // Strictly non-PII: projectType and budgetRange
+      sendGAEvent('contact_form_submit', {
+        project_type: payload?.projectType,
+        budget: payload?.budgetRange,
+      });
+      break;
+
+    case 'booking_started':
+      sendGAEvent('contact_click', { cta_location: 'cal_booking', cta_type: 'book_call' });
+      break;
+
+    case 'hero_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'hero', cta_type: 'book_call' });
+      break;
+
+    case 'nav_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'navbar', cta_type: 'book_call' });
+      break;
+
+    case 'final_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'footer_cta', cta_type: 'book_call' });
+      break;
+
+    case 'start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'cta_button', cta_type: 'start_project' });
+      break;
+
+    case 'about_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'about', cta_type: 'book_call' });
+      break;
+
+    case 'about_start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'about', cta_type: 'start_project' });
+      break;
+
+    case 'service_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'service', cta_type: 'book_call' });
+      break;
+
+    case 'service_start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'service', cta_type: 'start_project' });
+      break;
+
+    case 'work_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'work', cta_type: 'book_call' });
+      break;
+
+    case 'work_start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'work', cta_type: 'start_project' });
+      break;
+
+    case 'collectai_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'collectai', cta_type: 'book_call' });
+      break;
+
+    case 'collectai_start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'collectai', cta_type: 'start_project' });
+      break;
+
+    case 'ai_cfo_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'ai_cfo', cta_type: 'book_call' });
+      break;
+
+    case 'ai_cfo_start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'ai_cfo', cta_type: 'start_project' });
+      break;
+
+    case 'lab_book_call_clicked':
+      sendGAEvent('contact_click', { cta_location: 'lab', cta_type: 'book_call' });
+      break;
+
+    case 'lab_start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'lab', cta_type: 'start_project' });
+      break;
+
+    case 'investment_start_project_clicked':
+      sendGAEvent('contact_click', { cta_location: 'pricing', cta_type: 'start_project' });
+      break;
+
+    default:
+      break;
+  }
+}
+
+// ==============================================================================
+// SPECIFIC GA4 PORTFOLIO EVENT HELPERS
+// ==============================================================================
+
+export function trackContactClick(location: string, type = 'general') {
+  sendGAEvent('contact_click', { cta_location: location, cta_type: type });
+}
+
+export function trackContactFormStart() {
+  sendGAEvent('contact_form_start');
+}
+
+export function trackContactFormSubmit(serviceType?: string) {
+  sendGAEvent('contact_form_submit', {
+    service_type: serviceType,
+  });
+}
+
+export function trackEmailClick(location = 'direct') {
+  sendGAEvent('email_click', { cta_location: location });
+}
+
+export function trackLinkedInClick(location = 'direct') {
+  sendGAEvent('linkedin_click', { cta_location: location });
+}
+
+export function trackGitHubClick(location = 'direct') {
+  sendGAEvent('github_click', { cta_location: location });
+}
+
+export function trackProjectView(projectSlug: string, projectName: string) {
+  sendGAEvent('project_view', {
+    project_slug: projectSlug,
+    project_name: projectName,
+  });
+}
+
+export function trackProjectCtaClick(projectSlug: string, ctaName: string) {
+  sendGAEvent('project_cta_click', {
+    project_slug: projectSlug,
+    cta_name: ctaName,
+  });
+}
+
+export function trackArticleView(articleSlug: string, articleTitle: string) {
+  sendGAEvent('article_view', {
+    article_slug: articleSlug,
+    article_title: articleTitle,
+  });
+}
+
+export function trackResumeDownload() {
+  sendGAEvent('resume_download');
 }

@@ -5,6 +5,7 @@
  */
 
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.in').replace(/\/+$/, '');
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-B9PXN9Y57P';
 
 export const siteConfig = {
   name: 'Prince Singh Rana',
@@ -15,6 +16,7 @@ export const siteConfig = {
   description:
     'Full-stack developer engineering production-ready SaaS platforms, AI copilots, and high-performance web software for startups and ambitious businesses.',
   url: SITE_URL,
+  gaMeasurementId: GA_MEASUREMENT_ID,
   locale: 'en_US',
   author: {
     name: 'Prince Singh Rana',

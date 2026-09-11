@@ -22,6 +22,7 @@ import { insightsData } from '@/data/insights';
 import { TableOfContents } from '@/components/insights/table-of-contents';
 import { ArticleBodyRenderer } from '@/components/insights/article-body-renderer';
 import { BreadcrumbJsonLd, ArticleJsonLd } from '@/components/seo/json-ld';
+import { ArticleTracker } from '@/components/analytics/trackers';
 import { cn } from '@/lib/utils';
 
 interface PageProps {
@@ -93,6 +94,7 @@ export default async function InsightArticlePage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col selection:bg-accent/20 selection:text-accent">
+      <ArticleTracker slug={article.slug} title={article.title} />
       {/* Structured Data */}
       <BreadcrumbJsonLd
         items={[

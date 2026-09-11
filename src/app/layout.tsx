@@ -4,6 +4,8 @@ import '@/styles/globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { siteConfig } from '@/config/site';
 import { WebSiteJsonLd, PersonJsonLd } from '@/components/seo/json-ld';
+import { GoogleAnalytics } from '@/components/analytics/google-analytics';
+import { AnalyticsListener } from '@/components/analytics/analytics-listener';
 
 const fontSans = Inter({
   subsets: ['latin'],
@@ -76,6 +78,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={`${fontSans.variable} ${fontMono.variable}`}>
       <body className="antialiased min-h-screen bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
+        <GoogleAnalytics />
+        <AnalyticsListener />
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="system"

@@ -87,11 +87,11 @@ const nextConfig: NextConfig = {
   async headers() {
     const cspHeader = `
       default-src 'self';
-      script-src 'self' 'unsafe-inline' https://cal.com https://*.cal.com https://app.cal.com;
+      script-src 'self' 'unsafe-inline' https://cal.com https://*.cal.com https://app.cal.com https://www.googletagmanager.com;
       style-src 'self' 'unsafe-inline';
-      img-src 'self' data: blob: https://images.unsplash.com https://*.googleusercontent.com https://cal.com https://app.cal.com;
+      img-src 'self' data: blob: https://images.unsplash.com https://*.googleusercontent.com https://cal.com https://app.cal.com https://*.google-analytics.com https://*.googletagmanager.com;
       font-src 'self' data:;
-      connect-src 'self' https://*.supabase.co https://cal.com https://*.cal.com https://api.cal.com https://app.cal.com;
+      connect-src 'self' https://*.supabase.co https://cal.com https://*.cal.com https://api.cal.com https://app.cal.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com;
       frame-src 'self' https://cal.com https://*.cal.com https://app.cal.com;
       frame-ancestors 'none';
       object-src 'none';

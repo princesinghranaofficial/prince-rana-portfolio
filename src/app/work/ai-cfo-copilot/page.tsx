@@ -14,6 +14,7 @@ import { AICFOReportsActions } from '@/components/case-studies/ai-cfo/ai-cfo-rep
 import { AICFOEngineering } from '@/components/case-studies/ai-cfo/ai-cfo-engineering';
 import { AICFOFooterCTA } from '@/components/case-studies/ai-cfo/ai-cfo-footer-cta';
 import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '@/components/seo/json-ld';
+import { ProjectTracker } from '@/components/analytics/trackers';
 
 export const metadata: Metadata = {
   title: 'AI CFO & Copilot — Financial Intelligence SaaS Case Study',
@@ -54,6 +55,7 @@ export const metadata: Metadata = {
 export default function AICFOCaseStudyPage() {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col selection:bg-emerald-500/20 selection:text-emerald-500">
+      <ProjectTracker slug="ai-cfo-copilot" name="AI CFO & Copilot" />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', path: '/' },

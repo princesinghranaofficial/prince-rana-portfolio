@@ -18,7 +18,7 @@ import {
   Linkedin
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { trackEvent } from '@/lib/analytics';
+import { trackEvent, trackGitHubClick, trackLinkedInClick, trackEmailClick } from '@/lib/analytics';
 
 export function AboutHeroIdentity() {
   return (
@@ -68,6 +68,7 @@ export function AboutHeroIdentity() {
             href="https://github.com/princesinghranaofficial"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackGitHubClick('about_identity')}
             className="hover:text-foreground transition-colors flex items-center gap-1.5"
           >
             <svg
@@ -89,6 +90,7 @@ export function AboutHeroIdentity() {
             href="https://www.linkedin.com/in/prince-kumar-b2053a200/"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackLinkedInClick('about_identity')}
             className="hover:text-foreground transition-colors flex items-center gap-1.5"
           >
             <Linkedin className="w-3.5 h-3.5" />
@@ -114,6 +116,7 @@ export function AboutHeroIdentity() {
           </a>
           <a
             href="mailto:princesinghranaofficial@gmail.com"
+            onClick={() => trackEmailClick('about_identity')}
             className="hover:text-foreground transition-colors flex items-center gap-1.5"
           >
             <Mail className="w-3.5 h-3.5" />

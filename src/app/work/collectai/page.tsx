@@ -13,6 +13,7 @@ import { CollectAIIntegrations } from '@/components/case-studies/collectai/colle
 import { CollectAIEngineering } from '@/components/case-studies/collectai/collectai-engineering';
 import { CollectAIFooterCTA } from '@/components/case-studies/collectai/collectai-footer-cta';
 import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '@/components/seo/json-ld';
+import { ProjectTracker } from '@/components/analytics/trackers';
 
 export const metadata: Metadata = {
   title: 'CollectAI — AI Accounts Receivable SaaS Case Study',
@@ -53,6 +54,7 @@ export const metadata: Metadata = {
 export default function CollectAICaseStudyPage() {
   return (
     <div className="min-h-screen bg-background text-text-primary flex flex-col selection:bg-accent selection:text-accent-foreground">
+      <ProjectTracker slug="collectai" name="CollectAI" />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', path: '/' },

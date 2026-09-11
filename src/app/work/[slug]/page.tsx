@@ -24,6 +24,7 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { projectsData } from '@/data/projects';
+import { ProjectTracker } from '@/components/analytics/trackers';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -87,6 +88,7 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
+      <ProjectTracker slug={project.slug} name={project.title} />
       <Navbar />
       <main id="main-content" className="flex-1 pt-32 pb-24">
         <Container size="default">

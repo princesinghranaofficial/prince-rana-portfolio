@@ -1,8 +1,11 @@
+'use client';
+
 import * as React from 'react';
 import Link from 'next/link';
 import { ArrowUpRight, Instagram, Linkedin, Mail, Twitter } from 'lucide-react';
 import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
+import { trackGitHubClick, trackLinkedInClick, trackEmailClick } from '@/lib/analytics';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -45,6 +48,7 @@ export function Footer() {
                 href="https://github.com/princesinghranaofficial"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackGitHubClick('footer')}
                 className="w-8 h-8 rounded-lg border border-border/60 bg-surface-50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
                 aria-label="GitHub Profile (opens in new tab)"
               >
@@ -66,6 +70,7 @@ export function Footer() {
                 href="https://www.linkedin.com/in/prince-kumar-b2053a200/"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackLinkedInClick('footer')}
                 className="w-8 h-8 rounded-lg border border-border/60 bg-surface-50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
                 aria-label="LinkedIn Profile (opens in new tab)"
               >
@@ -91,6 +96,7 @@ export function Footer() {
               </a>
               <a
                 href="mailto:princesinghranaofficial@gmail.com"
+                onClick={() => trackEmailClick('footer')}
                 className="w-8 h-8 rounded-lg border border-border/60 bg-surface-50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground/30 transition-colors"
                 aria-label="Send Email to princesinghranaofficial@gmail.com"
               >
