@@ -217,7 +217,7 @@ function FullStackArchitectureVisual() {
       <div className="grid grid-cols-1 sm:grid-cols-5 gap-3 text-xs font-mono">
         <div className="p-4 rounded-2xl bg-surface-200/40 dark:bg-surface-950/60 border border-border/60 space-y-2">
           <span className="text-[10px] text-muted-foreground uppercase block font-bold">1. Interface</span>
-          <strong className="text-foreground text-sm font-sans block">Next.js 15 &amp; React</strong>
+          <strong className="text-foreground text-sm font-sans block">Next.js &amp; React</strong>
           <span className="text-[11px] text-muted-foreground block">Tailwind CSS, Radix UI, Framer Motion</span>
         </div>
 
@@ -362,7 +362,7 @@ function WebsiteConversionVisual() {
           <h4 className="text-base sm:text-lg font-bold text-foreground">7-Step Commercial Conversion Anatomy</h4>
         </div>
         <span className="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-xl">
-          95+ Core Web Vitals &middot; Sub-Second LCP
+          Core Web Vitals Optimization &middot; Fast LCP Delivery
         </span>
       </div>
 

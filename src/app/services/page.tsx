@@ -151,7 +151,7 @@ export default function ServicesPage() {
                 {[
                   { step: '01', title: 'Strategy', desc: 'Scope Slicing', icon: Zap },
                   { step: '02', title: 'UI / UX', desc: 'Design Systems', icon: Layers },
-                  { step: '03', title: 'Frontend', desc: 'Next.js 15 & React', icon: Code2 },
+                  { step: '03', title: 'Frontend', desc: 'Next.js & React', icon: Code2 },
                   { step: '04', title: 'Backend', desc: 'Node.js & APIs', icon: Server },
                   { step: '05', title: 'Database', desc: 'PostgreSQL RLS', icon: Database },
                   { step: '06', title: 'AI Layer', desc: 'Grounded RAG', icon: Bot },
@@ -477,7 +477,7 @@ export default function ServicesPage() {
               {[
                 { group: 'PRODUCT', items: ['Product Architecture', 'Information Architecture', 'Feature Scope Slicing', 'User Flow State Machines', 'SaaS Unit Economics'] },
                 { group: 'DESIGN', items: ['Design Token Systems', 'Dashboard & Portal UX', 'Responsive Layout Math', 'Data Visualizations', 'Dark / Light Theming'] },
-                { group: 'ENGINEERING', items: ['Next.js 15 App Router', 'Strict TypeScript', 'Node.js Microservices', 'PostgreSQL & Supabase', 'Row-Level Security'] },
+                { group: 'ENGINEERING', items: ['Next.js App Router', 'Strict TypeScript', 'Node.js Microservices', 'PostgreSQL & Supabase', 'Row-Level Security'] },
                 { group: 'PLATFORM', items: ['Authentication & RBAC', 'Stripe / Razorpay Billing', 'Idempotent Webhooks', 'Event Telemetry & Logs', 'Vercel / Cloudflare Edge'] },
                 { group: 'AI & DATA', items: ['Context-Aware Copilots', 'pgvector & RAG Search', 'Structured JSON Schemas', 'Anti-Hallucination Guards', 'Human Oversight Queues'] },
               ].map((col, idx) => (
@@ -532,7 +532,7 @@ export default function ServicesPage() {
                 {
                   model: 'Architecture & UX Overhaul',
                   duration: '4 to 8 Weeks',
-                  desc: 'Modernizing an existing codebase: upgrading to Next.js 15, restructuring database queries, elevating interface polish, or integrating AI copilots.',
+                  desc: 'Modernizing an existing codebase: modernizing to Next.js App Router, restructuring database queries, elevating interface polish, or integrating AI copilots.',
                   fit: 'Established SaaS products experiencing UI friction or scaling limits.',
                 },
               ].map((card, idx) => (

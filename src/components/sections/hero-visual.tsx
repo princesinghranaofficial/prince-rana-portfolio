@@ -158,7 +158,7 @@ export function HeroVisual() {
                 <ShieldCheck className="w-4 h-4 text-emerald-500" />
               </div>
               <div className="flex flex-wrap gap-1.5 pt-1">
-                {['Next.js 15', 'TypeScript', 'Supabase', 'PostgreSQL', 'Node.js', 'Vercel'].map((tech) => (
+                {['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Node.js', 'Cloudflare'].map((tech) => (
                   <span
                     key={tech}
                     className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-100 dark:bg-surface-50/80 text-foreground border border-border/40"

@@ -7,7 +7,7 @@ import { labProjects } from '@/data/lab-projects';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url.replace(/\/+$/, '');
   // Stable baseline date for core static pages
-  const staticLastModified = new Date('2025-03-01T00:00:00.000Z');
+  const staticLastModified = new Date('2026-03-01T00:00:00.000Z');
 
   // 1. Static core routes
   const staticRoutes: MetadataRoute.Sitemap = [

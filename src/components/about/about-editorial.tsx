@@ -304,7 +304,7 @@ export function TechnicalPhilosophy() {
       icon: Cpu,
     },
     {
-      title: 'Measured Sub-Second Performance',
+      title: 'Performance-Focused Architecture',
       desc: 'Optimized image pipelines, font subsetting, edge caching, and atomic queries targeted to achieve 95+ Core Web Vitals.',
       icon: Zap,
     },

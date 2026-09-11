@@ -259,7 +259,7 @@ export default function AboutPage() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded-full font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                        REAL PRODUCT
+                        BUILT PRODUCT
                       </span>
                       <span className="text-xs font-mono text-muted-foreground">B2B Fintech SaaS</span>
                     </div>
@@ -281,7 +281,7 @@ export default function AboutPage() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-[10px] font-mono px-2 py-0.5 rounded-full font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                        REAL PRODUCT
+                        BUILT PRODUCT
                       </span>
                       <span className="text-xs font-mono text-muted-foreground">Financial Intelligence</span>
                     </div>

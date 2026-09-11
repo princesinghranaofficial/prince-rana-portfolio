@@ -35,7 +35,7 @@ export function WorkHero() {
           <div className="pt-4 flex flex-wrap items-center gap-3 text-xs font-mono">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-border bg-surface-muted/60 text-text-primary">
               <span className="w-2 h-2 rounded-full bg-emerald-500" />
-              <span className="font-semibold">{realCount} Real Products</span>
+              <span className="font-semibold">{realCount} Built Products</span>
               <span className="text-text-tertiary">(Commercial Deployments)</span>
             </div>
 

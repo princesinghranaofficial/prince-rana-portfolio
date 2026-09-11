@@ -25,7 +25,7 @@ const architectureLayers: ArchitectureLayer[] = [
     icon: LayoutGrid,
     description: 'Sub-second interaction models, responsive viewport math, and tokenized design systems.',
     technologies: [
-      { name: 'Next.js 15 (App Router)', role: 'Streaming Server Components' },
+      { name: 'Next.js (App Router)', role: 'Streaming Server Components' },
       { name: 'React 19', role: 'Concurrent rendering & optimistic actions' },
       { name: 'TypeScript', role: 'End-to-end static contract safety' },
       { name: 'Tailwind CSS', role: 'Tokenized design system & dark theme' },

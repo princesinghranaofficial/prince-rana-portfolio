@@ -68,7 +68,7 @@ const steps: ProcessStep[] = [
     duration: 'Week 5–6',
     icon: CheckCircle2,
     description: 'Verify edge cases, test database security policies, validate cross-browser layouts, and run audits.',
-    deliverables: ['Security RLS Audit', 'Lighthouse 95+ Audit', 'WCAG 2.2 AA Checks'],
+    deliverables: ['Security RLS Audit', 'Lighthouse Performance Audit', 'Accessibility Evaluation'],
   },
   {
     step: '06',

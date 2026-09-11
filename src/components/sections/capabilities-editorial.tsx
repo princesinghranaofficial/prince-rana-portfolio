@@ -49,7 +49,7 @@ const capabilitiesList = [
     deliverables: [
       'Apple-inspired editorial typography & responsive layout math',
       'Technical SEO, JSON-LD schemas & Open Graph cards',
-      'Sub-second Core Web Vitals (LCP, CLS, INP)',
+      'Core Web Vitals Optimization (LCP, CLS, INP)',
       'Multi-step lead qualification funnels & discovery call booking',
     ],
     href: '/services/website-development',

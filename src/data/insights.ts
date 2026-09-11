@@ -14,8 +14,8 @@ export const insightsData: InsightArticle[] = [
       role: 'Full-Stack SaaS & AI Product Developer',
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
-    publishedAt: '2025-02-15',
-    updatedAt: '2025-02-28',
+    publishedAt: '2026-02-28',
+    updatedAt: '2026-03-01',
     readingTime: '9 min read',
     featured: true,
     status: 'published',
@@ -417,7 +417,7 @@ Structure the core domain first. The user interface will follow naturally.
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
     publishedAt: '2025-02-05',
-    readingTime: '11 min read',
+    readingTime: '2 min read',
     featured: false,
     status: 'published',
     toc: [
@@ -564,7 +564,7 @@ describe('Multi-Tenant RLS Penetration Suite', () => {
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
     publishedAt: '2025-02-12',
-    readingTime: '8 min read',
+    readingTime: '2 min read',
     featured: false,
     status: 'published',
     toc: [
@@ -682,7 +682,7 @@ In enterprise software, AI should **propose**, while humans **approve**:
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
     publishedAt: '2025-01-28',
-    readingTime: '7 min read',
+    readingTime: '2 min read',
     featured: false,
     status: 'published',
     toc: [
@@ -784,7 +784,7 @@ On mobile devices, do not shrink tables into unreadable micro-text with 12 horiz
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
     publishedAt: '2025-01-20',
-    readingTime: '8 min read',
+    readingTime: '2 min read',
     featured: false,
     status: 'published',
     toc: [
@@ -887,7 +887,7 @@ Building an MVP in 3–5 weeks is not about writing sloppy code; it is about bui
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
     publishedAt: '2025-01-10',
-    readingTime: '10 min read',
+    readingTime: '2 min read',
     featured: false,
     status: 'published',
     toc: [
@@ -1007,7 +1007,7 @@ When you execute data logic inside Server Components, your secret API keys (Stri
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
     publishedAt: '2025-01-05',
-    readingTime: '8 min read',
+    readingTime: '1 min read',
     featured: false,
     status: 'published',
     toc: [
@@ -1111,7 +1111,7 @@ By capturing this metadata in an immutable append-only audit table, enterprise c
       bio: 'Architecting and engineering production SaaS platforms and AI products for founders internationally.',
     },
     publishedAt: '2024-12-18',
-    readingTime: '7 min read',
+    readingTime: '1 min read',
     featured: false,
     status: 'published',
     toc: [

@@ -42,7 +42,7 @@ export function AICFOHero() {
           {/* Badges */}
           <div className="flex flex-wrap items-center gap-2.5">
             <Badge variant="real-product" size="sm" className="font-mono text-xs uppercase tracking-wider">
-              REAL PRODUCT
+              BUILT PRODUCT
             </Badge>
             <Badge variant="outline" size="sm" className="font-mono text-xs text-emerald-500 border-emerald-500/30 bg-emerald-500/10">
               AI Financial Intelligence SaaS
@@ -95,7 +95,7 @@ export function AICFOHero() {
             </div>
             <div className="space-y-1">
               <span className="text-muted-foreground block text-[10px] uppercase tracking-wider">Core Stack</span>
-              <span className="font-semibold text-foreground">Next.js 15, Supabase, Node.js</span>
+              <span className="font-semibold text-foreground">Next.js, Supabase, Node.js</span>
             </div>
           </div>
         </div>

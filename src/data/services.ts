@@ -10,7 +10,7 @@ export const servicesData: Service[] = [
     shortDescription: 'Full-cycle engineering for multi-tenant SaaS platforms, database architecture, RBAC authentication, subscription billing, and production deployment.',
     fullDescription: 'I partner with founders, venture-backed startups, and growing technology businesses to design and engineer production-grade SaaS products. Rather than piecing together disparate freelancers or navigating bloated agency overhead, you get single-source architectural ownership: from multi-tenant PostgreSQL data models and Row-Level Security to high-density reactive dashboards and automated Stripe/Razorpay billing engines.',
     problem: 'Founders and businesses often struggle with bloated agency timelines, brittle database schemas that cannot scale, fragile authentication, and interfaces that feel like generic UI templates rather than serious commercial software.',
-    solution: 'I architect hardened, type-safe SaaS foundations using Next.js 15, TypeScript, Node.js, and PostgreSQL/Supabase. Every workflow is engineered with strict tenancy separation, automated subscription state synchronization, and sub-second UI responsiveness.',
+    solution: 'I architect hardened, type-safe SaaS foundations using Next.js, TypeScript, Node.js, and PostgreSQL/Supabase. Every workflow is engineered with strict tenancy separation, automated subscription state synchronization, and sub-second UI responsiveness.',
     audience: [
       'Founders launching new venture-backed or bootstrapped SaaS platforms',
       'B2B software companies replacing legacy systems or rewriting v1 prototypes',
@@ -26,7 +26,7 @@ export const servicesData: Service[] = [
       { title: 'Production Cloud Infrastructure', description: 'Vercel, Cloudflare, AWS, and Docker deployment with automated CI/CD checks, logging, and error tracking.' },
     ],
     deliverables: [
-      'Complete, production-grade frontend built with Next.js 15, TypeScript, and Tailwind CSS',
+      'Complete, production-grade frontend built with Next.js, TypeScript, and Tailwind CSS',
       'Hardened backend architecture with Node.js / Server Actions and REST/tRPC APIs',
       'Relational PostgreSQL database schema with migration scripts and Row Level Security policies',
       'Complete authentication, team invitation, and role-based permission system',
@@ -43,7 +43,7 @@ export const servicesData: Service[] = [
       { step: '05', title: 'Validation, Security & Load Testing', description: 'Run static analysis, penetration checks, responsive QA, and database query optimization.' },
       { step: '06', title: 'Production Deployment & Handoff', description: 'Configure DNS, SSL, error monitoring, automated backups, and deliver complete documentation.' },
     ],
-    technologies: ['TypeScript', 'Next.js 15', 'React', 'Node.js', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Stripe', 'Razorpay', 'Vercel'],
+    technologies: ['TypeScript', 'Next.js', 'React', 'Node.js', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Stripe', 'Razorpay', 'Vercel'],
     relatedProjectSlugs: ['collectai', 'ai-cfo', 'ledgerflow', 'scalehq'],
     connectedProof: [
       {
@@ -79,7 +79,7 @@ export const servicesData: Service[] = [
       },
       {
         model: 'Full Platform Build',
-        description: 'Comprehensive design and full-stack development of a complete commercial SaaS platform from scratch.',
+        description: 'Comprehensive design and full-stack development of a complete SaaS platform from scratch.',
         typicalFit: '6 to 10 Weeks &middot; Complete product layer',
       },
       {
@@ -160,7 +160,7 @@ export const servicesData: Service[] = [
       { step: '04', title: 'Validation, Guardrails & Testing', description: 'Implement Zod schema validation, PII redaction filters, and automated evaluation suites.' },
       { step: '05', title: 'Cost & Latency Optimization', description: 'Introduce semantic cache layers, token budget caps, and background queue workers.' },
     ],
-    technologies: ['TypeScript', 'Next.js 15', 'OpenAI API', 'Anthropic Claude', 'pgvector', 'Supabase', 'Node.js', 'Zod', 'LangChain/Vercel AI SDK'],
+    technologies: ['TypeScript', 'Next.js', 'OpenAI API', 'Anthropic Claude', 'pgvector', 'Supabase', 'Node.js', 'Zod', 'LangChain/Vercel AI SDK'],
     relatedProjectSlugs: ['ai-cfo', 'collectai', 'aura-ai', 'support-ai', 'cliniq-ai'],
     connectedProof: [
       {
@@ -253,12 +253,12 @@ export const servicesData: Service[] = [
       { title: 'Edge Deployment & Observability', description: 'Vercel, Cloudflare Workers, structured logging, and Sentry error monitoring.' },
     ],
     deliverables: [
-      'Fully type-safe Next.js 15 & React application with zero TypeScript and zero ESLint errors',
+      'Fully type-safe Next.js & React application with zero TypeScript and zero ESLint errors',
       'PostgreSQL database schema managed via automated migration files (Supabase / Prisma / Drizzle)',
       'Secure authentication, session tokens, and role-based permissions',
       'Clean, modular API routes with Zod request validation and structured error boundaries',
       'Design-system-driven UI components with dark mode and reduced-motion accessibility',
-      'Optimized Core Web Vitals (sub-second LCP, 0 CLS, high FID/INP responsiveness)',
+      'Optimized Core Web Vitals (low LCP, stable layout, high INP responsiveness)',
       'Comprehensive deployment runbook and technical documentation',
     ],
     process: [
@@ -268,7 +268,7 @@ export const servicesData: Service[] = [
       { step: '04', title: 'Integration & Testing', description: 'Connect payment gateways, external webhooks, and run end-to-end verification.' },
       { step: '05', title: 'Deployment & Monitoring', description: 'Deploy to production cloud edge, configure monitoring, and transfer repository ownership.' },
     ],
-    technologies: ['TypeScript', 'Next.js 15', 'React', 'Node.js', 'PostgreSQL', 'Supabase', 'Tailwind CSS', 'Zod', 'Vercel', 'Cloudflare'],
+    technologies: ['TypeScript', 'Next.js', 'React', 'Node.js', 'PostgreSQL', 'Supabase', 'Tailwind CSS', 'Zod', 'Vercel', 'Cloudflare'],
     relatedProjectSlugs: ['collectai', 'ai-cfo', 'sentinel', 'pulse-analytics'],
     connectedProof: [
       {
@@ -377,7 +377,7 @@ export const servicesData: Service[] = [
       { step: '04', title: 'Testing & Soft Launch', description: 'Verify payments, test on mobile devices, and deploy to staging for feedback.' },
       { step: '05', title: 'Production Launch & Diligence Prep', description: 'Go live on your domain with error tracking and analytics instrumentation.' },
     ],
-    technologies: ['Next.js 15', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Stripe', 'Vercel', 'PostHog'],
+    technologies: ['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Tailwind CSS', 'Stripe', 'Vercel', 'PostHog'],
     relatedProjectSlugs: ['collectai', 'launchboard', 'scalehq'],
     connectedProof: [
       {
@@ -455,19 +455,19 @@ export const servicesData: Service[] = [
     ],
     capabilities: [
       { title: 'Conversion Rate Architecture', description: 'Strategic narrative pacing: Positioning → Problem → Story → Proof → Product → Trust → CTA.' },
-      { title: 'Sub-Second Core Web Vitals', description: '95+ Lighthouse performance scores, instant server pre-rendering, and optimized media delivery.' },
+      { title: 'Core Web Vitals Optimization', description: 'Performance-focused engineering, efficient server pre-rendering, and optimized media delivery.' },
       { title: 'Advanced Technical SEO', description: 'Semantic HTML, structured JSON-LD schemas, OpenGraph preview cards, and canonical routing.' },
       { title: 'Responsive Multi-Breakpoint Precision', description: 'Flawlessly engineered layouts tested across 9 viewport widths (mobile to ultra-wide).' },
       { title: 'Accessible Interactive Elements', description: 'Keyboard navigation, WCAG AA color contrast, reduced-motion preferences, and screen-reader support.' },
       { title: 'Lightweight Content Management', description: 'MDX, headless CMS, or structured TypeScript data records allowing effortless copy updates.' },
     ],
     deliverables: [
-      'Custom, high-converting marketing website built in Next.js 15 and Tailwind CSS',
+      'Custom, high-converting marketing website built in Next.js and Tailwind CSS',
       'Interactive product mockups, interactive feature frames, and visual storytelling components',
       'Lead capture funnels, contact forms with spam prevention, and analytics event telemetry',
       'Complete technical SEO setup: XML sitemaps, robots.txt, canonical tags, and OpenGraph images',
       'Light/Dark mode theme persistence with zero-flash rendering',
-      'Lighthouse audit report verifying 95+ performance, accessibility, and SEO scores',
+      'Lighthouse audit report validating performance, accessibility, and SEO benchmarks',
       'Deployment on global edge CDN (Vercel / Cloudflare) with custom domain and SSL',
     ],
     process: [
@@ -477,7 +477,7 @@ export const servicesData: Service[] = [
       { step: '04', title: 'Technical SEO & Performance Pass', description: 'Audit Core Web Vitals, implement structured data, and optimize image assets.' },
       { step: '05', title: 'Cross-Device QA & Launch', description: 'Verify across 9 screen sizes, test form endpoints, and deploy to edge production.' },
     ],
-    technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Cloudflare', 'Vercel', 'MDX'],
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Cloudflare', 'Vercel', 'MDX'],
     relatedProjectSlugs: ['collectai', 'nova-commerce'],
     connectedProof: [
       {

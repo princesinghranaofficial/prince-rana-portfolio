@@ -54,11 +54,11 @@ export function CollectAIShowcase() {
               </div>
               <div className="pt-3 border-t border-border/60">
                 <span className="text-text-secondary block text-[10px] uppercase font-bold tracking-wider">Production Stack</span>
-                <span className="text-text-primary font-semibold block mt-0.5">Next.js 15, TypeScript, Supabase, PostgreSQL, Node.js, Razorpay</span>
+                <span className="text-text-primary font-semibold block mt-0.5">Next.js, TypeScript, Supabase, PostgreSQL, Node.js, Razorpay</span>
               </div>
               <div className="pt-3 border-t border-border/60">
                 <span className="text-text-secondary block text-[10px] uppercase font-bold tracking-wider">Status Verification</span>
-                <span className="text-emerald-600 dark:text-emerald-400 font-semibold block mt-0.5">Commercial SaaS Architecture</span>
+                <span className="text-emerald-600 dark:text-emerald-400 font-semibold block mt-0.5">Built Full-Stack SaaS</span>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export function CollectAIShowcase() {
                 </span>
               </div>
               <span className="text-[11px] font-mono text-text-secondary hidden sm:inline-block">
-                Multi-Tenant PostgreSQL • Row Level Security
+                Demo Environment • Multi-Tenant PostgreSQL RLS
               </span>
             </div>
 

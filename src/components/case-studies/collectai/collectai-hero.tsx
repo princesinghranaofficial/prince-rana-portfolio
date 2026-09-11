@@ -60,7 +60,7 @@ export function CollectAIHero() {
               </div>
               <div className="pt-3 border-t border-border/60">
                 <span className="text-text-tertiary block text-[10px] uppercase font-bold tracking-wider">Core Production Stack</span>
-                <span className="text-text-primary font-semibold block mt-0.5">Next.js 15, TypeScript, Supabase, PostgreSQL, Razorpay</span>
+                <span className="text-text-primary font-semibold block mt-0.5">Next.js, TypeScript, Supabase, PostgreSQL, Razorpay</span>
               </div>
               <div className="pt-3 border-t border-border/60">
                 <span className="text-text-tertiary block text-[10px] uppercase font-bold tracking-wider">Key Capabilities</span>
@@ -68,7 +68,7 @@ export function CollectAIHero() {
               </div>
               <div className="pt-3 border-t border-border/60 flex items-center justify-between">
                 <span className="text-text-tertiary text-[10px] uppercase font-bold tracking-wider">Status Verification</span>
-                <span className="text-emerald-600 dark:text-emerald-400 font-semibold text-xs">Real Product</span>
+                <span className="text-emerald-600 dark:text-emerald-400 font-semibold text-xs">Built Product</span>
               </div>
             </div>
           </div>

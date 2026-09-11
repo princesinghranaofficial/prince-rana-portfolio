@@ -53,7 +53,7 @@ const engineeringDecisions = [
 ];
 
 const techStack = [
-  { category: 'Frontend Architecture', tools: ['Next.js 15 (App Router)', 'React 19', 'TypeScript', 'Tailwind CSS', 'Framer Motion'] },
+  { category: 'Frontend Architecture', tools: ['Next.js (App Router)', 'React 19', 'TypeScript', 'Tailwind CSS', 'Framer Motion'] },
   { category: 'Backend & APIs', tools: ['Node.js', 'Next.js Server Components', 'Route Handlers', 'Edge Middleware'] },
   { category: 'Persistence & RLS', tools: ['Supabase PostgreSQL', 'Row Level Security', 'Database Triggers', 'PgBouncer'] },
   { category: 'AI & Intelligence', tools: ['Claude 3.5 Sonnet', 'OpenAI GPT-4o', 'Structured JSON Tools', 'Prompt Sandboxing'] },
@@ -138,7 +138,7 @@ export function AICFOEngineering() {
                 <span className="text-muted-foreground">Vercel Global Edge CDN</span>
               </div>
               <p className="text-xs text-foreground font-sans">
-                Next.js 15 App Router &middot; Server Components &middot; Tailored SVG Visualizations &middot; Tabular Numerical Fonts &middot; Responsive Mobile-First Breakpoints
+                Next.js App Router &middot; Server Components &middot; Tailored SVG Visualizations &middot; Tabular Numerical Fonts &middot; Responsive Mobile-First Breakpoints
               </p>
             </div>
 

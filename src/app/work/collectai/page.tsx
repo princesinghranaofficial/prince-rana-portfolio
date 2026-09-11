@@ -17,7 +17,7 @@ import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '@/components/seo/js
 export const metadata: Metadata = {
   title: 'CollectAI — AI Accounts Receivable SaaS Case Study',
   description:
-    'Complete SaaS case study for CollectAI: an autonomous AI accounts receivable and invoice collection platform engineered with Next.js 15, TypeScript, Supabase PostgreSQL, and Razorpay.',
+    'Complete SaaS case study for CollectAI: an autonomous AI accounts receivable and invoice collection platform engineered with Next.js, TypeScript, Supabase PostgreSQL, and Razorpay.',
   alternates: {
     canonical: '/work/collectai',
   },

@@ -48,7 +48,7 @@ export function CollectAIEngineering() {
             <div className="p-4 rounded-xl border border-border bg-surface-muted/60 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="space-y-1">
                 <span className="text-[10px] text-accent uppercase font-bold block">Layer 01 • Presentation Layer</span>
-                <h4 className="font-bold text-text-primary text-sm">Next.js 15 (App Router) + React 19 + Tailwind CSS</h4>
+                <h4 className="font-bold text-text-primary text-sm">Next.js (App Router) + React 19 + Tailwind CSS</h4>
                 <p className="text-[11px] text-text-secondary">Server Components streaming UI, concurrent state transitions, and responsive financial tables.</p>
               </div>
               <span className="px-2.5 py-1 rounded bg-surface border border-border text-text-primary text-[11px] shrink-0">
@@ -340,7 +340,7 @@ export function CollectAIEngineering() {
             {[
               { title: 'Product Strategy & Modeling', desc: 'Defined customer data models, aging logic, and collection workflow states.' },
               { title: 'UI/UX & Design System', desc: 'Engineered high-density dashboard layouts, responsive tables, and typography scale.' },
-              { title: 'Full-Stack Next.js 15', desc: 'Developed type-safe frontend, server components, and responsive navigation.' },
+              { title: 'Full-Stack Next.js', desc: 'Developed type-safe frontend, server components, and responsive navigation.' },
               { title: 'Database Architecture', desc: 'Designed PostgreSQL schema, indexes, migrations, and Row Level Security policies.' },
               { title: 'AI Integration & Prompts', desc: 'Engineered AI Collector prompts, tone parameters, and structured JSON schemas.' },
               { title: 'Payment Webhook Engine', desc: 'Integrated Razorpay dynamic checkout links and real-time ledger settlement.' },

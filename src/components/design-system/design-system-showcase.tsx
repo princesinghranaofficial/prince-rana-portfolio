@@ -137,7 +137,7 @@ export function DesignSystemShowcase() {
           <Eyebrow>Phase 2 Design System</Eyebrow>
           <DisplayXL>Design System & Visual QA</DisplayXL>
           <BodyLarge>
-            A disciplined, production-grade design system built with typography hierarchy, subtle surface layering, extreme spacing restraint, and WCAG 2.2 AA accessibility.
+            A disciplined, production-grade design system built with typography hierarchy, subtle surface layering, extreme spacing restraint, and accessibility-conscious engineering.
           </BodyLarge>
         </div>
 
@@ -253,7 +253,7 @@ export function DesignSystemShowcase() {
               <span className="text-xs font-mono text-text-tertiary">Technical Code & Caption</span>
               <div className="flex flex-wrap items-center gap-4">
                 <CodeText>const client = createBrowserClient(url, key);</CodeText>
-                <Caption>Updated 2 minutes ago • WCAG 2.2 AA compliant</Caption>
+                <Caption>Updated 2 minutes ago • Built toward WCAG 2.2 AA</Caption>
               </div>
             </div>
           </div>

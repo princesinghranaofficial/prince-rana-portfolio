@@ -102,7 +102,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'workflow-canvas',
     },
     stack: {
-      frontend: ['Next.js 15 (App Router)', 'TypeScript', 'Tailwind CSS', 'React Flow', 'Framer Motion'],
+      frontend: ['Next.js (App Router)', 'TypeScript', 'Tailwind CSS', 'React Flow', 'Framer Motion'],
       backend: ['Node.js', 'FastAPI (Python)', 'LangGraph', 'gRPC Workers'],
       database: ['PostgreSQL (Supabase)', 'pgvector', 'Qdrant', 'Redis (Upstash)'],
       ai: ['OpenAI GPT-4o', 'Anthropic Claude 3.5 Sonnet', 'Cohere Rerank', 'Voyage Embeddings'],
@@ -217,7 +217,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'metric-grid',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Recharts', 'TanStack Table'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Recharts', 'TanStack Table'],
       backend: ['Go (Golang)', 'Node.js Microservices', 'Temporal Workflow Engine'],
       database: ['PostgreSQL', 'TimescaleDB', 'Redis'],
       infrastructure: ['Docker', 'AWS Fargate', 'Plaid API', 'Stripe Treasury'],
@@ -331,7 +331,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'workflow-canvas',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'TipTap Editor', 'Web Audio API'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'TipTap Editor', 'Web Audio API'],
       backend: ['Python FastAPI', 'Node.js', 'WebSockets for Streaming Audio'],
       database: ['PostgreSQL (Encrypted-at-Rest)', 'Redis', 'FHIR API Adapters'],
       ai: ['Whisper Medical', 'Fine-tuned Llama 3 Medical', 'Claude 3.5 Sonnet'],
@@ -446,7 +446,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'kanban-peek',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Mapbox GL JS', 'TanStack Table'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Mapbox GL JS', 'TanStack Table'],
       backend: ['Node.js', 'PostgreSQL', 'PostGIS for Geospatial Queries'],
       database: ['Supabase PostgreSQL', 'Amazon S3 Document Vault'],
       infrastructure: ['Vercel Edge', 'Mapbox API', 'SendGrid Deal Memos'],
@@ -560,7 +560,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'metric-grid',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Recharts', 'Framer Motion'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Recharts', 'Framer Motion'],
       backend: ['Node.js', 'PostgreSQL', 'Redis Queue for Webhook Processing'],
       database: ['Supabase PostgreSQL', 'Shopify GraphQL API', 'Amazon Selling Partner API'],
       infrastructure: ['Vercel Edge Functions', 'AWS Lambda for Nightly Heavy Batch Jobs'],
@@ -674,7 +674,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'kanban-peek',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'dnd-kit'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'dnd-kit'],
       backend: ['Node.js', 'PostgreSQL (Supabase)', 'Stripe API'],
       database: ['PostgreSQL with RLS', 'Redis for Session Caching'],
       infrastructure: ['Vercel Serverless', 'Postmark for Client Notifications'],
@@ -788,7 +788,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'threat-radar',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Pixi.js (Topology)', 'WebSockets'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Pixi.js (Topology)', 'WebSockets'],
       backend: ['Rust Microservices', 'Go Telemetry Collector', 'Node.js API'],
       database: ['TimescaleDB (Events)', 'Neo4j (Asset Graph)', 'PostgreSQL'],
       infrastructure: ['AWS EKS', 'Cloudflare Zero Trust', 'Kafka Stream Engine'],
@@ -902,7 +902,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'analytics-stream',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'D3.js / Recharts', 'Zustand'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'D3.js / Recharts', 'Zustand'],
       backend: ['Go Event Ingestion API', 'Node.js Query Server', 'ClickHouse (Columnar)'],
       database: ['ClickHouse', 'PostgreSQL (Metadata & Users)', 'Redis Cache'],
       infrastructure: ['Cloudflare Workers for Beacon Ingestion', 'Fly.io Clusters'],
@@ -1016,7 +1016,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'kanban-peek',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Zustand'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Zustand'],
       backend: ['Node.js API', 'Python NLP Service', 'BullMQ Queue'],
       database: ['PostgreSQL (Supabase)', 'Redis', 'Pinecone for Vector Call Search'],
       ai: ['Whisper Speech-to-Text', 'GPT-4o Mini for Extraction', 'Anthropic Claude 3.5'],
@@ -1131,7 +1131,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'timeline',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Web Audio API', 'Zustand'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Web Audio API', 'Zustand'],
       backend: ['Local-First IndexedDB', 'CRDT Sync Engine'],
       database: ['IndexedDB (Browser)', 'Encrypted Cloud Backup (Supabase)'],
       infrastructure: ['Vercel Edge', 'Service Workers for Full Offline PWA'],
@@ -1245,7 +1245,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'workflow-canvas',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Monaco Editor', 'WebContainers'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Monaco Editor', 'WebContainers'],
       backend: ['Node.js', 'Python Sandbox Runner', 'OpenAI API'],
       database: ['PostgreSQL (Supabase)', 'Redis for Session Code State'],
       infrastructure: ['Vercel', 'AWS ECS for Isolated Code Sandbox Execution'],
@@ -1359,7 +1359,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'metric-grid',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Zustand'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Zustand'],
       backend: ['Node.js API', 'Python LangChain Service', 'WebSockets'],
       database: ['PostgreSQL (Supabase)', 'pgvector for Doc Search', 'Redis'],
       ai: ['OpenAI GPT-4o Mini', 'Claude 3.5 Haiku', 'Cohere Embeddings'],
@@ -1474,7 +1474,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'kanban-peek',
     },
     stack: {
-      frontend: ['React', 'Next.js 15', 'TypeScript', 'Tailwind CSS', 'dnd-kit'],
+      frontend: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'dnd-kit'],
       backend: ['Node.js API', 'PostgreSQL', 'BullMQ Queue'],
       database: ['Supabase PostgreSQL', 'Amazon S3 Document Storage'],
       infrastructure: ['Vercel', 'SendGrid for Candidate Outreach'],
@@ -1588,7 +1588,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'timeline',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Zustand'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Zustand'],
       backend: ['Node.js Serverless API', 'PostgreSQL (Supabase)'],
       database: ['PostgreSQL with RLS', 'Redis Cache'],
       infrastructure: ['Vercel', 'Postmark for Investor Dispatch', 'React-PDF for Exports'],
@@ -1702,7 +1702,7 @@ export const labProjects: ProductLabProject[] = [
       heroTreatment: 'threat-radar',
     },
     stack: {
-      frontend: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Recharts'],
+      frontend: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Recharts'],
       backend: ['Python FastAPI', 'Playwright Scraping Workers', 'Celery Queue'],
       database: ['PostgreSQL (Supabase)', 'pgvector for News Topic Clustering', 'Redis'],
       ai: ['Claude 3.5 Sonnet for Synthesis', 'Sentence-Transformers for Topic Modeling'],

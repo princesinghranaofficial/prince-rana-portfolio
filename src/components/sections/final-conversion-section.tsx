@@ -23,7 +23,7 @@ export function FinalConversionSection() {
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-muted text-accent text-xs font-mono border border-accent/20">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Available for Q2 / Sprints Booking</span>
+            <span>Available for selected projects</span>
           </div>
 
           {/* Headline & Body */}

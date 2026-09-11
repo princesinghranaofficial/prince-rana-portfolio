@@ -11,7 +11,7 @@ const techLayers = [
     category: 'Frontend & UI Engineering',
     icon: LayoutGrid,
     technologies: [
-      { name: 'Next.js 15', desc: 'App Router, Server Components & Dynamic Bundling' },
+      { name: 'Next.js', desc: 'App Router, Server Components & Dynamic Bundling' },
       { name: 'React 19', desc: 'Concurrent rendering & optimistic UI state' },
       { name: 'TypeScript', desc: 'Strict static type safety across components' },
       { name: 'Tailwind CSS', desc: 'Tokenized responsive styling & dark theme' },

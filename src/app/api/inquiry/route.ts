@@ -97,6 +97,7 @@ function isAllowedOrigin(req: NextRequest): boolean {
     if (host && originUrl.host === host) return true;
     if (originUrl.hostname === 'localhost' || originUrl.hostname === '127.0.0.1') return true;
     if (originUrl.hostname === 'princesinghrana.online' || originUrl.hostname.endsWith('.princesinghrana.online')) return true;
+    if (originUrl.hostname.endsWith('.workers.dev')) return true;
     if (originUrl.hostname === 'princesinghrana.dev' || originUrl.hostname.endsWith('.princesinghrana.dev')) return true;
     if (process.env.NEXT_PUBLIC_SITE_URL) {
       const siteUrl = new URL(process.env.NEXT_PUBLIC_SITE_URL);

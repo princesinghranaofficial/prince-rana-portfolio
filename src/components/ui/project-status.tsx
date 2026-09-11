@@ -20,9 +20,9 @@ const statusConfig: Record<
   }
 > = {
   'REAL PRODUCT': {
-    label: 'Real Product',
+    label: 'Built Product',
     icon: CheckCircle2,
-    description: 'Production client / commercially deployed SaaS',
+    description: 'Fully built and deployed full-stack application',
     containerClass: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/30',
     iconClass: 'text-emerald-600 dark:text-emerald-400',
   },

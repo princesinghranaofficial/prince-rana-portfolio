@@ -200,7 +200,7 @@ export function HeroProductShowcase() {
                 <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
               </div>
               <div className="flex flex-wrap gap-1">
-                {['Next.js 15', 'TypeScript', 'Supabase', 'PostgreSQL', 'Node.js', 'Vercel'].map(
+                {['Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Node.js', 'Cloudflare'].map(
                   (tech) => (
                     <span
                       key={tech}

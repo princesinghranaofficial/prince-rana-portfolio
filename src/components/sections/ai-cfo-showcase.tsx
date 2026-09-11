@@ -64,7 +64,7 @@ export function AICFOShowcase() {
                 </span>
               </div>
               <span className="text-[11px] font-mono text-text-secondary hidden sm:inline-block">
-                Predictive Cash Runway Engine
+                Demo Environment • Sample Financial Data
               </span>
             </div>
 

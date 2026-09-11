@@ -152,7 +152,7 @@ function WorkDiscoveryContent() {
             </div>
             <div className="text-[11px] text-text-secondary flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0" />
-              <span><strong>Real Product:</strong> Live commercial software deployment.</span>
+              <span><strong>Built Product:</strong> Fully engineered and deployed application.</span>
             </div>
             <div className="text-[11px] text-text-secondary flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0" />

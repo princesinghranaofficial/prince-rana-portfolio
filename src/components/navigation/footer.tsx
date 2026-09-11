@@ -147,8 +147,8 @@ export function Footer() {
         <div className="pt-8 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between text-xs text-muted-foreground gap-4 font-mono">
           <p>&copy; {currentYear} Prince Singh Rana. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <span>Built with Next.js 15 & Supabase</span>
-            <span>WCAG 2.2 AA</span>
+            <span>Built with Next.js & Supabase</span>
+            <span>Built toward WCAG 2.2 AA</span>
           </div>
         </div>
       </Container>

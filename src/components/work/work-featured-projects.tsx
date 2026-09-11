@@ -19,7 +19,7 @@ export function WorkFeaturedProjects() {
             Featured Flagship Products
           </h2>
           <p className="type-body text-text-secondary">
-            Production-deployed commercial SaaS platforms engineered end-to-end — from database architecture and security rules to polished, responsive interfaces.
+            Fully built full-stack SaaS platforms engineered end-to-end — from database architecture and security rules to polished, responsive interfaces.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export function WorkFeaturedProjects() {
                 </div>
                 <div className="pt-3 border-t border-border/60">
                   <span className="text-text-secondary block text-[10px] uppercase font-bold tracking-wider">Production Stack</span>
-                  <span className="text-text-primary font-semibold block mt-0.5">Next.js 15, TypeScript, Supabase, PostgreSQL, Node.js, Razorpay</span>
+                  <span className="text-text-primary font-semibold block mt-0.5">Next.js, TypeScript, Supabase, PostgreSQL, Node.js, Razorpay</span>
                 </div>
                 <div className="pt-4 border-t border-border/60">
                   <Link href="/work/collectai">

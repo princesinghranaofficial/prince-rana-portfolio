@@ -20,7 +20,7 @@ export function SecondaryWorkPreview() {
         <SectionHeader
           eyebrow="Conceptual Work"
           title="More product explorations."
-          description="In addition to flagship commercial SaaS products, I build high-fidelity conceptual architectures to validate user experience and data models across diverse industries."
+          description="In addition to flagship built SaaS products, I build high-fidelity conceptual architectures to validate user experience and data models across diverse industries."
           action={
             <Link href="/work">
               <Button variant="outline" size="sm" rightIcon={<ArrowUpRight className="w-3.5 h-3.5" />}>
