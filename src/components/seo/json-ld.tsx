@@ -52,7 +52,7 @@ export function PersonJsonLd() {
     '@type': 'Person',
     '@id': `${siteConfig.url}/#person`,
     name: siteConfig.author.name,
-    alternateName: 'Prince Rana',
+    alternateName: 'Prince Singh Rana',
     jobTitle: siteConfig.primaryPositioning,
     description: siteConfig.description,
     url: `${siteConfig.url}/`,
@@ -93,7 +93,7 @@ export function ProfilePageJsonLd() {
     url: pageUrl,
     name: `About ${siteConfig.author.name} — ${siteConfig.primaryPositioning}`,
     description:
-      'Full-Stack SaaS and AI product developer turning complex product ideas into clear, usable, and production-minded software.',
+      'Learn about Prince Rana, a SaaS developer and AI automation developer building production software from product strategy and PostgreSQL architecture to modern Next.js interfaces.',
     isPartOf: {
       '@id': `${siteConfig.url}/#website`,
     },

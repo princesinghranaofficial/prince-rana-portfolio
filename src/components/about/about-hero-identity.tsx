@@ -27,15 +27,15 @@ export function AboutHeroIdentity() {
       <div className="lg:col-span-7 space-y-6">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-muted text-accent text-xs font-mono border border-accent/20">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span>Available for Selected International Engagements</span>
+          <span>Prince Rana — SaaS Developer &amp; AI Automation Developer</span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-foreground leading-[1.08]">
-          I design and build software from product idea to production.
+          Designing and engineering software from product idea to production.
         </h1>
 
         <p className="text-lg sm:text-xl text-text-secondary leading-relaxed font-normal">
-          I’m a full-stack SaaS and AI product developer focused on turning complex product ideas into clear, usable, and production-minded software.
+          I’m Prince Rana, a SaaS developer and AI automation developer focused on turning complex product ideas into clear, usable, and production-minded software.
         </p>
 
         <p className="text-sm text-muted-foreground leading-relaxed">
@@ -138,8 +138,8 @@ export function AboutHeroIdentity() {
                 PSR
               </div>
               <div>
-                <span className="text-base font-bold text-foreground block">Prince Singh Rana</span>
-                <span className="text-xs font-mono text-accent">Full-Stack SaaS & AI Developer</span>
+                <span className="text-base font-bold text-foreground block">Prince Rana</span>
+                <span className="text-xs font-mono text-accent">SaaS Developer &amp; AI Automation Developer</span>
               </div>
             </div>
             <div className="p-2 rounded-xl bg-surface-100 dark:bg-surface-800 border border-border/50 text-foreground">

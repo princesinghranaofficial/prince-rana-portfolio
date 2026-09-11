@@ -9,16 +9,16 @@ import { WorkConversion } from '@/components/work/work-conversion';
 import { BreadcrumbJsonLd } from '@/components/seo/json-ld';
 
 export const metadata: Metadata = {
-  title: 'Selected Work & SaaS Architectures',
+  title: 'Projects — SaaS & AI Products by Prince Rana',
   description:
-    'Explore production SaaS applications, autonomous AI copilots, and digital product architectures engineered by Full-Stack SaaS & AI Product Developer Prince Singh Rana.',
+    'Explore production SaaS platforms, AI automation systems, and full-stack web applications engineered by Prince Rana. Review architecture, tech stacks, and live case studies.',
   alternates: {
     canonical: '/work',
   },
   openGraph: {
-    title: 'Selected Work & SaaS Architectures | Prince Singh Rana',
+    title: 'Projects — SaaS & AI Products by Prince Rana',
     description:
-      'Explore production SaaS applications, autonomous AI copilots, and digital product architectures engineered for ambitious startups.',
+      'Explore production SaaS platforms, AI automation systems, and full-stack web applications engineered by Prince Rana. Review architecture, tech stacks, and live case studies.',
     url: '/work',
     siteName: 'Prince Rana',
     locale: 'en_US',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Selected Work & SaaS Architectures | Prince Singh Rana',
+    title: 'Projects — SaaS & AI Products by Prince Rana',
     description:
-      'Explore production SaaS applications, autonomous AI copilots, and digital product architectures engineered for ambitious startups.',
+      'Explore production SaaS platforms, AI automation systems, and full-stack web applications engineered by Prince Rana. Review architecture, tech stacks, and live case studies.',
   },
 };
 

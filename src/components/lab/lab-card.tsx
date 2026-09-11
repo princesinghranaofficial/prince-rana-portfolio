@@ -62,7 +62,7 @@ export function LabProjectCard({ project, index = 0 }: LabProjectCardProps) {
           <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface-200 dark:bg-surface-800 border-b border-border/50">
             <Image
               src={project.coverImage}
-              alt={`${project.title} Architectural Concept`}
+              alt={`${project.title} — ${project.industry} concept software interface`}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover group-hover:scale-[1.02] transition-transform duration-300 ease-out"

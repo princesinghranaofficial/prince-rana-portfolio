@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!article) {
     return {
-      title: 'Article Not Found | Prince Singh Rana',
+      title: 'Article Not Found | Prince Rana',
     };
   }
 

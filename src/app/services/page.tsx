@@ -37,22 +37,25 @@ import { ProjectInvestment } from '@/components/services/project-investment';
 import { BreadcrumbJsonLd } from '@/components/seo/json-ld';
 
 export const metadata: Metadata = {
-  title: 'SaaS, AI & Full-Stack Development Services',
-  description: 'Full-stack SaaS product engineering, embedded AI copilots, type-safe Next.js architecture, rapid MVP development, and high-performance websites for founders and startups.',
+  title: 'SaaS & AI Development Services',
+  description:
+    'Production SaaS product engineering, embedded AI automation workflows, type-safe Next.js web applications, and PostgreSQL multi-tenant architecture by Prince Rana.',
   alternates: {
     canonical: '/services',
   },
   openGraph: {
-    title: 'SaaS, AI & Full-Stack Development Services | Prince Rana',
-    description: 'From product idea to production-ready software. Full-stack SaaS platforms, AI product engineering, and high-converting technology websites.',
+    title: 'SaaS & AI Development Services | Prince Rana',
+    description:
+      'Production SaaS product engineering, embedded AI automation workflows, type-safe Next.js web applications, and PostgreSQL multi-tenant architecture by Prince Rana.',
     url: '/services',
     siteName: 'Prince Rana',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SaaS, AI & Full-Stack Development Services | Prince Rana',
-    description: 'From product idea to production-ready software. Full-stack SaaS platforms, AI product engineering, and high-converting technology websites.',
+    title: 'SaaS & AI Development Services | Prince Rana',
+    description:
+      'Production SaaS product engineering, embedded AI automation workflows, type-safe Next.js web applications, and PostgreSQL multi-tenant architecture by Prince Rana.',
   },
 };
 

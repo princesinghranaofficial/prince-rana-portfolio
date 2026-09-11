@@ -18,17 +18,17 @@ export function WorkHero() {
         <div className="max-w-4xl space-y-6">
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-muted text-accent text-xs font-mono border border-accent/20">
-            <span>SELECTED WORK</span>
+            <span>SaaS &amp; AI Product Portfolio</span>
           </div>
 
           {/* Headline */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-text-primary leading-[1.1]">
-            Products designed, engineered and built for real problems.
+            SaaS and AI products engineered for real business workflows.
           </h1>
 
           {/* Supporting Copy */}
           <p className="text-lg sm:text-xl text-text-secondary leading-relaxed max-w-3xl">
-            A collection of SaaS, AI and digital product work spanning financial technology, business software, healthcare, security, analytics and more.
+            A portfolio of production SaaS platforms, AI automation systems, and digital product architectures engineered by Prince Rana with Next.js, TypeScript, and Supabase.
           </p>
 
           {/* Dynamic Authentic Metadata Counts */}

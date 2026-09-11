@@ -116,7 +116,7 @@ export const servicesData: Service[] = [
     ],
     seo: {
       title: 'SaaS Product Development Services | Full-Stack SaaS Developer',
-      description: 'Production-ready SaaS product development by full-stack developer Prince Singh Rana. Multi-tenant database architecture, RBAC authentication, Stripe billing, and Next.js interfaces.',
+      description: 'Production-ready SaaS product development by full-stack developer Prince Rana. Multi-tenant database architecture, RBAC authentication, Stripe billing, and Next.js interfaces.',
       keywords: ['SaaS development', 'full-stack SaaS developer', 'Next.js SaaS engineer', 'custom SaaS application', 'B2B SaaS development'],
     },
   },
@@ -224,7 +224,7 @@ export const servicesData: Service[] = [
     ],
     seo: {
       title: 'AI SaaS Development Services | AI Product Engineer',
-      description: 'Custom AI SaaS development by Prince Singh Rana. Embedded AI copilots, guardrailed RAG vector search, document intelligence, and autonomous business workflows in Next.js.',
+      description: 'Custom AI SaaS development by Prince Rana. Embedded AI copilots, guardrailed RAG vector search, document intelligence, and autonomous business workflows in Next.js.',
       keywords: ['AI SaaS development', 'AI product developer', 'AI copilot engineer', 'RAG vector search Next.js', 'custom AI web application'],
     },
   },
@@ -332,7 +332,7 @@ export const servicesData: Service[] = [
     ],
     seo: {
       title: 'Full-Stack Development Services | Next.js & TypeScript Engineer',
-      description: 'End-to-end full-stack web development by Prince Singh Rana. Type-safe Next.js, Node.js, PostgreSQL, and Supabase architecture built for scale and performance.',
+      description: 'End-to-end full-stack web development by Prince Rana. Type-safe Next.js, Node.js, PostgreSQL, and Supabase architecture built for scale and performance.',
       keywords: ['full-stack developer', 'Next.js TypeScript developer', 'PostgreSQL database engineer', 'custom web application development'],
     },
   },
@@ -433,7 +433,7 @@ export const servicesData: Service[] = [
     ],
     seo: {
       title: 'SaaS MVP Development Services | Startup MVP Developer',
-      description: 'Rapid, production-ready SaaS MVP development in 3 to 5 weeks by Prince Singh Rana. Focused scope, high-converting UX, Stripe payments, and extensible Next.js architecture.',
+      description: 'Rapid, production-ready SaaS MVP development in 3 to 5 weeks by Prince Rana. Focused scope, high-converting UX, Stripe payments, and extensible Next.js architecture.',
       keywords: ['SaaS MVP development', 'MVP developer', 'startup SaaS engineer', 'rapid MVP development', 'build SaaS prototype'],
     },
   },
@@ -533,7 +533,7 @@ export const servicesData: Service[] = [
     ],
     seo: {
       title: 'SaaS & Tech Website Development | High-Converting Next.js Websites',
-      description: 'High-performance marketing website development for SaaS and technology companies by Prince Singh Rana. Editorial design, technical SEO, and 95+ Core Web Vitals.',
+      description: 'High-performance marketing website development for SaaS and technology companies by Prince Rana. Editorial design, technical SEO, and 95+ Core Web Vitals.',
       keywords: ['SaaS website development', 'technology website developer', 'startup marketing site Next.js', 'high conversion website engineer'],
     },
   },

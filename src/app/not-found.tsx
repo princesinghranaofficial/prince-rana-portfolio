@@ -8,7 +8,7 @@ import { Container } from '@/components/ui/container';
 import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
-  title: 'Page Not Found (404) | Prince Singh Rana',
+  title: 'Page Not Found (404) | Prince Rana',
   description: 'The requested page could not be found. Explore production SaaS work, services, or get in touch.',
   robots: {
     index: false,

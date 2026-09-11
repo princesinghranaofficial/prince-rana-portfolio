@@ -47,7 +47,7 @@ export default function InsightsPage() {
     '@id': `${absoluteUrl('/insights')}#collectionpage`,
     name: 'Technical Insights & Engineering Notes',
     description:
-      'Articles on SaaS architecture, AI copilot engineering, full-stack systems, and product UI/UX by Prince Singh Rana.',
+      'Articles on SaaS architecture, AI copilot engineering, full-stack systems, and product UI/UX by Prince Rana.',
     url: absoluteUrl('/insights'),
     isPartOf: {
       '@id': `${siteConfig.url}/#website`,

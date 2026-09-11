@@ -116,10 +116,10 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-sm font-semibold tracking-tight text-foreground group-hover:text-accent transition-colors leading-none">
-                Prince Singh Rana
+                Prince Rana
               </span>
               <span className="text-[10px] font-mono uppercase tracking-widest text-text-secondary mt-0.5">
-                Product Developer
+                SaaS &amp; AI Developer
               </span>
             </div>
           </Link>

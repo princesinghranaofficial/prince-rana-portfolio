@@ -39,12 +39,12 @@ export function CollectAIHero() {
 
               {/* Headline */}
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-text-primary leading-[1.08]">
-                A smarter operating system for accounts receivable.
+                CollectAI: Autonomous Accounts Receivable &amp; Invoice Collection SaaS
               </h1>
 
               {/* Supporting Copy */}
               <p className="text-lg sm:text-xl text-text-secondary leading-relaxed max-w-3xl">
-                CollectAI brings invoices, customers, receivables, collection workflows, payments and AI-assisted collection intelligence into one unified SaaS workspace.
+                CollectAI brings customer ledgers, automated collection workflows, dynamic payment reconciliation, and AI-assisted accounts receivable intelligence into one production SaaS workspace.
               </p>
             </div>
 

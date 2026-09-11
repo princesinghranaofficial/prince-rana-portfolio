@@ -11,22 +11,25 @@ import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { BreadcrumbJsonLd } from '@/components/seo/json-ld';
 
 export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Get in touch to discuss your SaaS application, AI copilot, or web product engineering needs.',
+  title: 'Contact Prince Rana — SaaS & AI Development',
+  description:
+    'Get in touch with Prince Rana for SaaS development, AI automation systems, and full-stack web engineering. Discuss project requirements, timelines, and technical architecture.',
   alternates: {
     canonical: '/contact',
   },
   openGraph: {
-    title: 'Contact Prince Rana | Full-Stack SaaS & AI Developer',
-    description: 'Get in touch to discuss your SaaS application, AI copilot, or web product engineering needs.',
+    title: 'Contact Prince Rana — SaaS & AI Development',
+    description:
+      'Get in touch with Prince Rana for SaaS development, AI automation systems, and full-stack web engineering. Discuss project requirements, timelines, and technical architecture.',
     url: '/contact',
     siteName: 'Prince Rana',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Contact Prince Rana | Full-Stack SaaS & AI Developer',
-    description: 'Get in touch to discuss your SaaS application, AI copilot, or web product engineering needs.',
+    title: 'Contact Prince Rana — SaaS & AI Development',
+    description:
+      'Get in touch with Prince Rana for SaaS development, AI automation systems, and full-stack web engineering. Discuss project requirements, timelines, and technical architecture.',
   },
 };
 
@@ -44,7 +47,7 @@ export default function ContactPage() {
         <Container size="default">
           <div className="max-w-3xl space-y-4 mb-16">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-muted text-accent text-xs font-mono border border-accent/20">
-              <span>Direct Communication</span>
+              <span>Prince Rana — Direct Communication</span>
             </div>
             <H1>Let&apos;s Build Your Product</H1>
             <TextLead>

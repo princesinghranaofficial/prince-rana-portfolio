@@ -16,9 +16,9 @@ import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '@/components/seo/js
 import { ProjectTracker } from '@/components/analytics/trackers';
 
 export const metadata: Metadata = {
-  title: 'CollectAI — AI Accounts Receivable SaaS Case Study',
+  title: 'CollectAI — AI Accounts Receivable SaaS',
   description:
-    'Complete SaaS case study for CollectAI: an autonomous AI accounts receivable and invoice collection platform engineered with Next.js, TypeScript, Supabase PostgreSQL, and Razorpay.',
+    'Case study of CollectAI: an autonomous AI accounts receivable and invoice collection SaaS platform engineered by Prince Rana with Next.js, TypeScript, and Supabase PostgreSQL.',
   alternates: {
     canonical: '/work/collectai',
   },
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'CollectAI — AI Accounts Receivable SaaS Case Study | Prince Singh Rana',
+    title: 'CollectAI — AI Accounts Receivable SaaS | Prince Rana',
     description:
-      'A complete architectural breakdown of CollectAI: autonomous accounts receivable, multi-tenant PostgreSQL RLS, and human-in-the-loop AI workflows.',
+      'Case study of CollectAI: an autonomous AI accounts receivable and invoice collection SaaS platform engineered by Prince Rana with Next.js, TypeScript, and Supabase PostgreSQL.',
     url: '/work/collectai',
     siteName: 'Prince Rana',
     locale: 'en_US',
@@ -39,15 +39,15 @@ export const metadata: Metadata = {
         url: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
         width: 1200,
         height: 630,
-        alt: 'CollectAI — Autonomous Accounts Receivable SaaS',
+        alt: 'CollectAI — Autonomous Accounts Receivable SaaS Platform',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'CollectAI — AI Accounts Receivable SaaS Case Study | Prince Singh Rana',
+    title: 'CollectAI — AI Accounts Receivable SaaS | Prince Rana',
     description:
-      'A complete architectural breakdown of CollectAI: autonomous accounts receivable, multi-tenant PostgreSQL RLS, and human-in-the-loop AI workflows.',
+      'Case study of CollectAI: an autonomous AI accounts receivable and invoice collection SaaS platform engineered by Prince Rana with Next.js, TypeScript, and Supabase PostgreSQL.',
   },
 };
 

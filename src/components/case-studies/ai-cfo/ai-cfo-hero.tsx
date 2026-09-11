@@ -55,7 +55,7 @@ export function AICFOHero() {
           {/* Headline & Lead */}
           <div className="space-y-4">
             <H1 className="text-3xl sm:text-5xl lg:text-6xl tracking-tight text-foreground font-bold">
-              AI CFO & Copilot
+              AI CFO &amp; Copilot: Financial Intelligence SaaS
             </H1>
             <p className="text-xl sm:text-2xl font-medium text-emerald-500 dark:text-emerald-400 leading-snug">
               Financial intelligence built for better business decisions.

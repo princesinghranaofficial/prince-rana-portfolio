@@ -17,9 +17,9 @@ import { BreadcrumbJsonLd, SoftwareApplicationJsonLd } from '@/components/seo/js
 import { ProjectTracker } from '@/components/analytics/trackers';
 
 export const metadata: Metadata = {
-  title: 'AI CFO & Copilot — Financial Intelligence SaaS Case Study',
+  title: 'AI CFO & Copilot — Financial Intelligence SaaS',
   description:
-    'Complete SaaS case study for AI CFO & Copilot: a financial intelligence platform uniting multi-account cash flow, transaction intelligence, scenario forecasting, and in-context AI decision support.',
+    'Case study of AI CFO & Copilot: a financial intelligence SaaS platform featuring multi-account cash flow modeling, scenario forecasting, and in-context AI decision support.',
   alternates: {
     canonical: '/work/ai-cfo-copilot',
   },
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: 'AI CFO & Copilot — Financial Intelligence SaaS Case Study | Prince Singh Rana',
+    title: 'AI CFO & Copilot — Financial Intelligence SaaS | Prince Rana',
     description:
-      'A complete architectural case study of AI CFO & Copilot: multi-account cash flow intelligence, forward scenario forecasting, and in-context LLM decision support.',
+      'Case study of AI CFO & Copilot: a financial intelligence SaaS platform featuring multi-account cash flow modeling, scenario forecasting, and in-context AI decision support.',
     url: '/work/ai-cfo-copilot',
     siteName: 'Prince Rana',
     locale: 'en_US',
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
         url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80',
         width: 1200,
         height: 630,
-        alt: 'AI CFO & Copilot Financial Intelligence Platform',
+        alt: 'AI CFO & Copilot Financial Intelligence SaaS Platform',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'AI CFO & Copilot — Financial Intelligence SaaS Case Study | Prince Singh Rana',
+    title: 'AI CFO & Copilot — Financial Intelligence SaaS | Prince Rana',
     description:
-      'A complete architectural breakdown of AI CFO & Copilot: cash flow intelligence, forward scenario forecasting, and in-context AI decision support.',
+      'Case study of AI CFO & Copilot: a financial intelligence SaaS platform featuring multi-account cash flow modeling, scenario forecasting, and in-context AI decision support.',
   },
 };
 

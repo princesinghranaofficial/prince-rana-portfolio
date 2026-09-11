@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: LabSlugPageProps): Promise<Me
       follow: true,
     },
     openGraph: {
-      title: `${project.title} — ${project.category} Architecture | Product Lab | Prince Singh Rana`,
+      title: `${project.title} — ${project.category} Architecture | Product Lab | Prince Rana`,
       description: project.description,
       images: [project.coverImage],
       url: `/lab/${project.slug}`,

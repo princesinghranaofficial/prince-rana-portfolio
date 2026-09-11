@@ -33,25 +33,25 @@ import { BreadcrumbJsonLd, ProfilePageJsonLd } from '@/components/seo/json-ld';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
-  title: 'About — Full-Stack SaaS & AI Product Developer',
+  title: 'About Prince Rana — SaaS & AI Developer',
   description:
-    'Full-Stack SaaS and AI product developer turning complex product ideas into clear, usable, and production-minded software. Product thinking and engineering in one workflow.',
+    'Learn about Prince Rana, a SaaS developer and AI automation developer building production software from product strategy and PostgreSQL architecture to modern Next.js interfaces.',
   alternates: {
     canonical: '/about',
   },
   openGraph: {
-    title: 'About Prince Rana — Full-Stack SaaS & AI Product Developer',
+    title: 'About Prince Rana — SaaS & AI Developer',
     description:
-      'Full-Stack SaaS and AI product developer turning complex product ideas into clear, usable, and production-minded software. Product thinking and engineering in one workflow.',
+      'Learn about Prince Rana, a SaaS developer and AI automation developer building production software from product strategy and PostgreSQL architecture to modern Next.js interfaces.',
     url: '/about',
     siteName: 'Prince Rana',
     type: 'profile',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Prince Rana — Full-Stack SaaS & AI Product Developer',
+    title: 'About Prince Rana — SaaS & AI Developer',
     description:
-      'Full-Stack SaaS and AI product developer turning complex product ideas into clear, usable, and production-minded software. Product thinking and engineering in one workflow.',
+      'Learn about Prince Rana, a SaaS developer and AI automation developer building production software from product strategy and PostgreSQL architecture to modern Next.js interfaces.',
   },
 };
 

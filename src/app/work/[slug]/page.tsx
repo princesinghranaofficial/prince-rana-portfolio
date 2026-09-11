@@ -190,7 +190,7 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
           <div className="relative aspect-[16/9] w-full rounded-2xl border border-border overflow-hidden bg-surface-100 dark:bg-surface-900 mb-16 shadow-2xl">
             <Image
               src={project.coverImage}
-              alt={project.title}
+              alt={`${project.title} — ${project.category} software overview`}
               fill
               priority
               sizes="100vw"
@@ -251,7 +251,7 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
                         <div className="relative aspect-[16/10] w-full rounded-lg overflow-hidden border border-border/60">
                           <Image
                             src={screen.image}
-                            alt={screen.title}
+                            alt={`${project.title} — ${screen.title} interface`}
                             fill
                             sizes="100vw"
                             className="object-cover"

@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: ServiceDetailPageProps): Prom
 
   if (!service) {
     return {
-      title: 'Service Not Found | Prince Singh Rana',
+      title: 'Service Not Found | Prince Rana',
     };
   }
 

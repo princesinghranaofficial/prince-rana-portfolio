@@ -30,18 +30,18 @@ export function HeroSection() {
           <div className="flex justify-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-100 border border-border text-[11px] font-mono uppercase tracking-widest text-text-secondary select-none">
               <span className="w-1.5 h-1.5 rounded-full bg-accent" aria-hidden="true" />
-              <span>Full-Stack SaaS &amp; AI Product Developer</span>
+              <span>Prince Rana — SaaS Developer &amp; AI Automation Developer</span>
             </div>
           </div>
 
           {/* PRIMARY HEADLINE - LCP ELEMENT: INSTANT SERVER RENDER */}
           <DisplayXL className="max-w-3xl mx-auto leading-[1.06] text-foreground">
-            Building SaaS products people want to use.
+            SaaS Developer Building AI-Powered Products &amp; Automation Systems
           </DisplayXL>
 
           {/* CONCISE SUPPORTING COPY */}
           <BodyLarge className="max-w-2xl mx-auto text-text-secondary">
-            I design and engineer production-ready SaaS, AI products and high-performance web experiences for startups and ambitious businesses.
+            I design and engineer production-ready SaaS platforms, AI automation systems, and high-performance web applications with Next.js, TypeScript, and Supabase.
           </BodyLarge>
 
           {/* PRIMARY & SECONDARY CTA GROUP */}

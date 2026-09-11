@@ -119,7 +119,7 @@ export function FeaturedWork() {
                       <div className="relative aspect-[16/10] w-full">
                         <Image
                           src={project.coverImage}
-                          alt={project.title}
+                          alt={`${project.title} — ${project.category} software interface`}
                           fill
                           sizes="(max-width: 1024px) 100vw, 60vw"
                           className="object-cover group-hover:scale-105 transition-transform duration-500 ease-out"

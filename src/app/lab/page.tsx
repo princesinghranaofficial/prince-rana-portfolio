@@ -11,14 +11,14 @@ import { BreadcrumbJsonLd } from '@/components/seo/json-ld';
 export const metadata: Metadata = {
   title: 'Product Lab — SaaS & AI Product Concepts',
   description:
-    'An experimental product studio showcasing 15 self-directed SaaS and AI software architectures across 15 industries. Designed and engineered by Prince Singh Rana with complete transparency and zero fabricated metrics.',
+    'An experimental product studio showcasing 15 self-directed SaaS and AI software architectures across 15 industries. Designed and engineered by Prince Rana with full architectural transparency.',
   alternates: {
     canonical: '/lab',
   },
   openGraph: {
-    title: 'Product Lab — SaaS & AI Product Concepts | Prince Singh Rana',
+    title: 'Product Lab — SaaS & AI Product Concepts | Prince Rana',
     description:
-      'Explore 15 self-directed SaaS and AI product architectures designed and engineered by Prince Singh Rana across 15 industries with zero fabricated metrics.',
+      'Explore 15 self-directed SaaS and AI product architectures designed and engineered by Prince Rana across 15 industries with complete architectural transparency.',
     url: '/lab',
     siteName: 'Prince Rana',
     images: [
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
         url: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
         width: 1200,
         height: 630,
-        alt: 'Prince Singh Rana Product Lab',
+        alt: 'Prince Rana Product Lab — SaaS & AI Architectures',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Product Lab — SaaS & AI Product Concepts | Prince Singh Rana',
+    title: 'Product Lab — SaaS & AI Product Concepts | Prince Rana',
     description:
-      'Explore 15 self-directed SaaS and AI product architectures designed and engineered by Prince Singh Rana across 15 industries.',
+      'Explore 15 self-directed SaaS and AI product architectures designed and engineered by Prince Rana across 15 industries.',
   },
 };
 

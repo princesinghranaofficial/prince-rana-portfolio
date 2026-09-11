@@ -9,25 +9,25 @@ import { BookingInterface } from '@/components/booking/booking-interface';
 import { BreadcrumbJsonLd } from '@/components/seo/json-ld';
 
 export const metadata: Metadata = {
-  title: 'Book a Discovery Call',
+  title: 'Book a Discovery Call — SaaS & AI Development',
   description:
-    'Schedule a 30-minute discovery call to evaluate your SaaS product, AI copilot architecture, project scope, and technical roadmap.',
+    'Schedule a 30-minute discovery call with Prince Rana to evaluate your SaaS product architecture, AI automation workflows, project scope, and engineering roadmap.',
   alternates: {
     canonical: '/book',
   },
   openGraph: {
-    title: 'Book a Discovery Call | Prince Rana — Full-Stack SaaS & AI Developer',
+    title: 'Book a Discovery Call — SaaS & AI Development | Prince Rana',
     description:
-      'Schedule a 30-minute discovery call to evaluate your SaaS product, AI copilot architecture, project scope, and technical roadmap.',
+      'Schedule a 30-minute discovery call with Prince Rana to evaluate your SaaS product architecture, AI automation workflows, project scope, and engineering roadmap.',
     url: '/book',
     siteName: 'Prince Rana',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Book a Discovery Call | Prince Rana — Full-Stack SaaS & AI Developer',
+    title: 'Book a Discovery Call — SaaS & AI Development | Prince Rana',
     description:
-      'Schedule a 30-minute discovery call to evaluate your SaaS product, AI copilot architecture, project scope, and technical roadmap.',
+      'Schedule a 30-minute discovery call with Prince Rana to evaluate your SaaS product architecture, AI automation workflows, project scope, and engineering roadmap.',
   },
 };
 

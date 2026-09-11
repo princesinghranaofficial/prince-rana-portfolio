@@ -11,25 +11,25 @@ import { Button } from '@/components/ui/button';
 import { BreadcrumbJsonLd } from '@/components/seo/json-ld';
 
 export const metadata: Metadata = {
-  title: 'Start a Project — Technical Qualification',
+  title: 'Start a Project — SaaS & AI Development Qualification',
   description:
-    'Share your product requirements, current stage, scope, and budget. Direct technical qualification for SaaS platforms, AI copilots, and web engineering.',
+    'Share your product requirements, current stage, scope, and budget. Direct technical qualification with Prince Rana for SaaS platforms, AI automation systems, and web engineering.',
   alternates: {
     canonical: '/start-project',
   },
   openGraph: {
-    title: 'Start a Project | Prince Rana — Full-Stack SaaS & AI Developer',
+    title: 'Start a Project — SaaS & AI Development Qualification | Prince Rana',
     description:
-      'Share your product requirements, current stage, scope, and budget. Direct technical qualification for SaaS platforms, AI copilots, and web engineering.',
+      'Share your product requirements, current stage, scope, and budget. Direct technical qualification with Prince Rana for SaaS platforms, AI automation systems, and web engineering.',
     url: '/start-project',
     siteName: 'Prince Rana',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Start a Project | Prince Rana — Full-Stack SaaS & AI Developer',
+    title: 'Start a Project — SaaS & AI Development Qualification | Prince Rana',
     description:
-      'Share your product requirements, current stage, scope, and budget. Direct technical qualification for SaaS platforms, AI copilots, and web engineering.',
+      'Share your product requirements, current stage, scope, and budget. Direct technical qualification with Prince Rana for SaaS platforms, AI automation systems, and web engineering.',
   },
 };
 

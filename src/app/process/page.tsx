@@ -15,25 +15,25 @@ import {
 import { BreadcrumbJsonLd, JsonLdScript } from '@/components/seo/json-ld';
 
 export const metadata: Metadata = {
-  title: 'Product Development Process',
+  title: 'Product Development Process — SaaS & AI Engineering',
   description:
-    'A structured 8-stage engineering methodology from commercial discovery and PostgreSQL schema architecture to full-stack build, validation, and production deployment.',
+    'An 8-stage software engineering methodology used by Prince Rana to take SaaS products and AI automation systems from initial discovery to reliable production deployment.',
   alternates: {
     canonical: '/process',
   },
   openGraph: {
-    title: 'Product Development Process | Prince Rana',
+    title: 'Product Development Process — SaaS & AI Engineering | Prince Rana',
     description:
-      'A structured 8-stage engineering methodology from commercial discovery and PostgreSQL schema architecture to full-stack build, validation, and production deployment.',
+      'An 8-stage software engineering methodology used by Prince Rana to take SaaS products and AI automation systems from initial discovery to reliable production deployment.',
     url: '/process',
     siteName: 'Prince Rana',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Product Development Process | Prince Rana',
+    title: 'Product Development Process — SaaS & AI Engineering | Prince Rana',
     description:
-      'A structured 8-stage engineering methodology from commercial discovery and PostgreSQL schema architecture to full-stack build, validation, and production deployment.',
+      'An 8-stage software engineering methodology used by Prince Rana to take SaaS products and AI automation systems from initial discovery to reliable production deployment.',
   },
 };
 

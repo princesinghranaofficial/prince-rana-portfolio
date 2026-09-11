@@ -38,10 +38,10 @@ export function Footer() {
               <div aria-hidden="true" className="w-7 h-7 rounded-md bg-foreground text-background flex items-center justify-center font-mono text-xs font-bold">
                 PSR
               </div>
-              <span>Prince Singh Rana</span>
+              <span>Prince Rana</span>
             </div>
             <p className="text-xs text-muted-foreground max-w-sm leading-relaxed">
-              Full-Stack SaaS & AI Product Developer designing and engineering production-ready digital products for ambitious startups and businesses worldwide.
+              SaaS Developer &amp; AI Automation Developer designing and engineering production-ready digital products with Next.js, TypeScript, and Supabase.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a
@@ -172,7 +172,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-border/60 flex flex-col sm:flex-row items-center justify-between text-xs text-muted-foreground gap-4 font-mono">
-          <p>&copy; {currentYear} Prince Singh Rana. All rights reserved.</p>
+          <p>&copy; {currentYear} Prince Rana. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span>Built with Next.js & Supabase</span>
             <span>Built toward WCAG 2.2 AA</span>
