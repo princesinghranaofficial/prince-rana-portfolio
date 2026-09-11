@@ -45,13 +45,14 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: siteConfig.title,
     description: siteConfig.description,
-    siteName: `${siteConfig.name} Portfolio`,
+    siteName: siteConfig.name,
     images: [
       {
         url: siteConfig.defaultOgImage,
         width: 1200,
         height: 630,
         alt: `${siteConfig.name} — ${siteConfig.primaryPositioning}`,
+        type: 'image/png',
       },
     ],
   },

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description:
       'A complete architectural case study of AI CFO & Copilot: multi-account cash flow intelligence, forward scenario forecasting, and in-context LLM decision support.',
     url: '/work/ai-cfo-copilot',
-    siteName: 'Prince Singh Rana Portfolio',
+    siteName: 'Prince Rana',
     locale: 'en_US',
     type: 'article',
     images: [

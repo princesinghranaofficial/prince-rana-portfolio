@@ -43,7 +43,7 @@ export default function OgImage() {
                 fontFamily: 'monospace',
               }}
             >
-              PSR
+              PR
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <span style={{ fontSize: '24px', fontWeight: 700, color: '#f4f5f7' }}>

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       'Explore 15 self-directed SaaS and AI product architectures designed and engineered by Prince Singh Rana across 15 industries with zero fabricated metrics.',
     url: '/lab',
-    siteName: 'Prince Singh Rana Portfolio',
+    siteName: 'Prince Rana',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',

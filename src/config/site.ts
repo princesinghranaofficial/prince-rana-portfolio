@@ -8,13 +8,13 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://princesing
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-B9PXN9Y57P';
 
 export const siteConfig = {
-  name: 'Prince Singh Rana',
+  name: 'Prince Rana',
   professionalName: 'Prince Singh Rana',
-  title: 'Prince Singh Rana — Full-Stack SaaS & AI Product Developer',
-  shortTitle: 'Prince Singh Rana',
+  title: 'Prince Rana — SaaS Developer & AI Automation Builder',
+  shortTitle: 'Prince Rana',
   tagline: 'Building SaaS products people want to use.',
   description:
-    'Full-stack developer engineering production-ready SaaS platforms, AI copilots, and high-performance web software for startups and ambitious businesses.',
+    "Software developer building SaaS products, AI automation systems, web applications and modern digital experiences. Explore Prince Rana's projects, work and technical insights.",
   url: SITE_URL,
   gaMeasurementId: GA_MEASUREMENT_ID,
   locale: 'en_US',
@@ -32,7 +32,7 @@ export const siteConfig = {
     instagram: 'https://www.instagram.com/itprince.ai?stkn=MWVrMzE2cWc0dXp2OA==',
   },
   primaryPositioning: 'Full-Stack SaaS & AI Product Developer',
-  defaultOgImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80',
+  defaultOgImage: `${SITE_URL}/og-image.png`,
   keywords: [
     'SaaS developer',
     'AI SaaS developer',

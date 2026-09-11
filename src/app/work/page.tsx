@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     description:
       'Explore production SaaS applications, autonomous AI copilots, and digital product architectures engineered for ambitious startups.',
     url: '/work',
-    siteName: 'Prince Singh Rana Portfolio',
+    siteName: 'Prince Rana',
     locale: 'en_US',
     type: 'website',
   },

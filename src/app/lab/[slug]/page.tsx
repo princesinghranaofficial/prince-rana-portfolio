@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: LabSlugPageProps): Promise<Me
       description: project.description,
       images: [project.coverImage],
       url: `/lab/${project.slug}`,
-      siteName: 'Prince Singh Rana Portfolio',
+      siteName: 'Prince Rana',
     },
     twitter: {
       card: 'summary_large_image',

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description:
       'A complete architectural breakdown of CollectAI: autonomous accounts receivable, multi-tenant PostgreSQL RLS, and human-in-the-loop AI workflows.',
     url: '/work/collectai',
-    siteName: 'Prince Singh Rana Portfolio',
+    siteName: 'Prince Rana',
     locale: 'en_US',
     type: 'article',
     images: [
