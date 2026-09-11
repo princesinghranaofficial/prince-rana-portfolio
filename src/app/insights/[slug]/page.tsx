@@ -124,7 +124,7 @@ export default async function InsightArticlePage({ params }: PageProps) {
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col selection:bg-accent/20 selection:text-accent">
-      <ArticleTracker slug={article.slug} title={article.title} />
+      <ArticleTracker slug={article.slug} title={article.title} status={article.status} />
       {/* Structured Data: Breadcrumbs retained for clean hierarchy */}
       <BreadcrumbJsonLd
         items={[

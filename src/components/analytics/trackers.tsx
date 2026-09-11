@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import { usePathname } from 'next/navigation';
 import { trackProjectView, trackArticleView } from '@/lib/analytics';
 
 interface ProjectTrackerProps {
@@ -13,9 +14,11 @@ interface ProjectTrackerProps {
  * Renders null to preserve 100% visual and layout fidelity.
  */
 export function ProjectTracker({ slug, name }: ProjectTrackerProps) {
+  const pathname = usePathname();
+
   React.useEffect(() => {
-    trackProjectView(slug, name);
-  }, [slug, name]);
+    trackProjectView(slug, name, pathname);
+  }, [slug, name, pathname]);
 
   return null;
 }
@@ -23,16 +26,21 @@ export function ProjectTracker({ slug, name }: ProjectTrackerProps) {
 interface ArticleTrackerProps {
   slug: string;
   title: string;
+  status?: string;
 }
 
 /**
  * Invisible client-side tracker for insight article views.
+ * Strictly ignores non-published / sample drafts.
  * Renders null to preserve 100% visual and layout fidelity.
  */
-export function ArticleTracker({ slug, title }: ArticleTrackerProps) {
+export function ArticleTracker({ slug, title, status = 'published' }: ArticleTrackerProps) {
+  const pathname = usePathname();
+
   React.useEffect(() => {
-    trackArticleView(slug, title);
-  }, [slug, title]);
+    if (status !== 'published') return;
+    trackArticleView(slug, title, pathname);
+  }, [slug, title, status, pathname]);
 
   return null;
 }

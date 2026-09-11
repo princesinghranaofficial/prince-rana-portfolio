@@ -25,6 +25,7 @@ import { labProjects } from '@/data/lab-projects';
 import { LabProjectCard } from '@/components/lab/lab-card';
 import { ProductShowcase } from '@/components/lab/product-showcase-registry';
 import { BreadcrumbJsonLd, ProjectJsonLd } from '@/components/seo/json-ld';
+import { ProjectTracker } from '@/components/analytics/trackers';
 
 interface LabSlugPageProps {
   params: Promise<{ slug: string }>;
@@ -93,6 +94,7 @@ export default async function LabConceptDetailPage({ params }: LabSlugPageProps)
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col selection:bg-accent/20 selection:text-accent">
+      <ProjectTracker slug={`lab/${project.slug}`} name={project.title} />
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', path: '/' },

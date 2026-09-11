@@ -293,6 +293,7 @@ export function MultiStepInquiryForm() {
       trackEvent('inquiry_completed', {
         projectType: projectType || 'Other',
         budgetRange: budgetRange || 'Not sure yet',
+        timeline: timeline || 'Flexible',
       });
       window.scrollTo({ top: 200, behavior: 'smooth' });
     } catch (err) {
