@@ -29,7 +29,7 @@ import { Button } from '@/components/ui/button';
 import { servicesData } from '@/data/services';
 import { ServiceArchitectureVisual } from '@/components/services/service-architecture-visuals';
 import { BreadcrumbJsonLd, JsonLdScript } from '@/components/seo/json-ld';
-import { siteConfig } from '@/config/site';
+import { siteConfig, absoluteUrl } from '@/config/site';
 
 interface ServiceDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -84,13 +84,16 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': `${absoluteUrl(`/services/${service.slug}`)}#service`,
     name: service.title,
     description: service.shortDescription,
+    url: absoluteUrl(`/services/${service.slug}`),
     provider: {
       '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
       name: siteConfig.author.name,
       jobTitle: siteConfig.primaryPositioning,
-      url: siteConfig.url,
+      url: `${siteConfig.url}/`,
     },
     serviceType: service.title,
     areaServed: 'Worldwide',
@@ -111,6 +114,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    '@id': `${absoluteUrl(`/services/${service.slug}`)}#faq`,
     mainEntity: service.faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.question,

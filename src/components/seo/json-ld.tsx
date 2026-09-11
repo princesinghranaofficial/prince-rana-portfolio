@@ -3,6 +3,7 @@ import { siteConfig, absoluteUrl } from '@/config/site';
 
 /**
  * Helper to safely sanitize and serialize JSON-LD script tag content.
+ * Replaces '<' with unicode escape to prevent XSS and script breakout.
  */
 export function JsonLdScript({ data }: { data: Record<string, unknown> }) {
   return (
@@ -17,20 +18,23 @@ export function JsonLdScript({ data }: { data: Record<string, unknown> }) {
 
 /**
  * Root WebSite Schema
+ * Identifies the portfolio website with stable @id and links publisher to the Person entity.
  */
 export function WebSiteJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: siteConfig.title,
-    alternateName: siteConfig.name,
-    url: siteConfig.url,
+    '@id': `${siteConfig.url}/#website`,
+    name: `${siteConfig.name} Portfolio`,
+    alternateName: siteConfig.title,
+    url: `${siteConfig.url}/`,
     description: siteConfig.description,
     inLanguage: 'en-US',
     publisher: {
       '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
       name: siteConfig.author.name,
-      url: siteConfig.url,
+      url: `${siteConfig.url}/`,
     },
   };
 
@@ -38,16 +42,22 @@ export function WebSiteJsonLd() {
 }
 
 /**
- * Professional Person Schema (Factual, zero fabricated claims)
+ * Professional Person Schema
+ * Canonical entity representing portfolio owner Prince Singh Rana.
+ * Strictly uses factual, repo-supported properties with zero fabricated claims.
  */
 export function PersonJsonLd() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
+    '@id': `${siteConfig.url}/#person`,
     name: siteConfig.author.name,
+    alternateName: 'Prince Rana',
     jobTitle: siteConfig.primaryPositioning,
-    url: siteConfig.url,
-    email: siteConfig.author.email,
+    description: siteConfig.description,
+    url: `${siteConfig.url}/`,
+    email: `mailto:${siteConfig.author.email}`,
+    image: siteConfig.defaultOgImage,
     sameAs: [
       siteConfig.social.github,
       siteConfig.social.linkedin,
@@ -56,11 +66,13 @@ export function PersonJsonLd() {
     ].filter(Boolean),
     knowsAbout: [
       'SaaS Architecture',
-      'Artificial Intelligence Software',
       'Full-Stack Web Development',
+      'Artificial Intelligence Software',
       'Next.js',
+      'React',
       'TypeScript',
       'PostgreSQL',
+      'Supabase',
       'Multi-tenant Database Design',
     ],
   };
@@ -69,21 +81,52 @@ export function PersonJsonLd() {
 }
 
 /**
+ * ProfilePage Schema for /about
+ * Establishes explicit ProfilePage -> mainEntity -> Person (#person) relationship.
+ */
+export function ProfilePageJsonLd() {
+  const pageUrl = absoluteUrl('/about');
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'ProfilePage',
+    '@id': `${pageUrl}#profilepage`,
+    url: pageUrl,
+    name: `About ${siteConfig.author.name} — ${siteConfig.primaryPositioning}`,
+    description:
+      'Full-Stack SaaS and AI product developer turning complex product ideas into clear, usable, and production-minded software.',
+    isPartOf: {
+      '@id': `${siteConfig.url}/#website`,
+    },
+    mainEntity: {
+      '@id': `${siteConfig.url}/#person`,
+    },
+    breadcrumb: {
+      '@id': `${pageUrl}#breadcrumb`,
+    },
+  };
+
+  return <JsonLdScript data={schema} />;
+}
+
+/**
  * Navigational Breadcrumb Schema
+ * 1-indexed sequential breadcrumbs using canonical URLs.
  */
 export function BreadcrumbJsonLd({
   items,
 }: {
   items: { name: string; path: string }[];
 }) {
+  const currentPath = items[items.length - 1]?.path || '';
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
+    '@id': `${absoluteUrl(currentPath)}#breadcrumb`,
     itemListElement: items.map((item, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: absoluteUrl(item.path),
+      item: item.path === '/' ? `${siteConfig.url}/` : absoluteUrl(item.path),
     })),
   };
 
@@ -104,17 +147,20 @@ export function ServiceJsonLd({
   path: string;
   serviceType?: string;
 }) {
+  const pageUrl = absoluteUrl(path);
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    '@id': `${pageUrl}#service`,
     name,
     description,
-    url: absoluteUrl(path),
+    url: pageUrl,
     serviceType: serviceType || 'Software Development',
     provider: {
       '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
       name: siteConfig.author.name,
-      url: siteConfig.url,
+      url: `${siteConfig.url}/`,
     },
   };
 
@@ -123,6 +169,8 @@ export function ServiceJsonLd({
 
 /**
  * Technical Article Schema for Published Insights
+ * Compliant with Google Search Article Rich Results requirements.
+ * References canonical Person (#person) for author and publisher.
  */
 export function ArticleJsonLd({
   headline,
@@ -141,38 +189,54 @@ export function ArticleJsonLd({
   image?: string;
   keywords?: string[];
 }) {
-  const schema = {
+  const pageUrl = absoluteUrl(path);
+  const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
-    '@type': 'TechArticle',
+    '@type': 'Article',
+    '@id': `${pageUrl}#article`,
     headline,
     description,
-    url: absoluteUrl(path),
+    url: pageUrl,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': pageUrl,
+    },
     datePublished,
-    dateModified: dateModified || datePublished,
     inLanguage: 'en-US',
     image: image || siteConfig.defaultOgImage,
-    keywords: keywords?.join(', '),
     author: {
       '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
       name: siteConfig.author.name,
-      url: siteConfig.url,
+      url: `${siteConfig.url}/`,
     },
     publisher: {
       '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
       name: siteConfig.author.name,
-      url: siteConfig.url,
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': absoluteUrl(path),
+      url: `${siteConfig.url}/`,
+      logo: {
+        '@type': 'ImageObject',
+        url: siteConfig.defaultOgImage,
+      },
     },
   };
+
+  // Only include dateModified if a genuine distinct updated date is available
+  if (dateModified && dateModified !== datePublished) {
+    schema.dateModified = dateModified;
+  }
+
+  if (keywords && keywords.length > 0) {
+    schema.keywords = keywords.join(', ');
+  }
 
   return <JsonLdScript data={schema} />;
 }
 
 /**
- * Factual SoftwareApplication Schema for Real Production Case Studies
+ * Factual SoftwareApplication Schema for Real Built Products
+ * Strictly factual: no fake ratings, no fake offers, no fake prices.
  */
 export function SoftwareApplicationJsonLd({
   name,
@@ -189,21 +253,95 @@ export function SoftwareApplicationJsonLd({
   operatingSystem?: string;
   image?: string;
 }) {
+  const pageUrl = absoluteUrl(path);
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',
+    '@id': `${pageUrl}#software`,
     name,
     description,
-    url: absoluteUrl(path),
+    url: pageUrl,
     applicationCategory,
     operatingSystem,
     image: image || siteConfig.defaultOgImage,
     author: {
       '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
       name: siteConfig.author.name,
-      url: siteConfig.url,
+      url: `${siteConfig.url}/`,
+    },
+    publisher: {
+      '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
+      name: siteConfig.author.name,
+      url: `${siteConfig.url}/`,
     },
   };
+
+  return <JsonLdScript data={schema} />;
+}
+
+/**
+ * Project / Case Study Schema
+ * Renders SoftwareApplication if project is a real built product,
+ * otherwise renders CreativeWork for architectural case studies and prototypes.
+ */
+export function ProjectJsonLd({
+  name,
+  description,
+  path,
+  image,
+  dateCreated,
+  category,
+  technologies,
+  isSoftware = false,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  image?: string;
+  dateCreated?: string;
+  category?: string;
+  technologies?: string[];
+  isSoftware?: boolean;
+}) {
+  if (isSoftware) {
+    return (
+      <SoftwareApplicationJsonLd
+        name={name}
+        description={description}
+        path={path}
+        image={image}
+      />
+    );
+  }
+
+  const pageUrl = absoluteUrl(path);
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    '@id': `${pageUrl}#creativework`,
+    name,
+    description,
+    url: pageUrl,
+    image: image || siteConfig.defaultOgImage,
+    author: {
+      '@type': 'Person',
+      '@id': `${siteConfig.url}/#person`,
+      name: siteConfig.author.name,
+      url: `${siteConfig.url}/`,
+    },
+  };
+
+  if (dateCreated) {
+    schema.dateCreated = dateCreated;
+  }
+  if (category) {
+    schema.genre = category;
+  }
+  if (technologies && technologies.length > 0) {
+    schema.keywords = technologies.join(', ');
+  }
 
   return <JsonLdScript data={schema} />;
 }

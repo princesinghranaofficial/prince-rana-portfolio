@@ -24,7 +24,7 @@ import { LabConversion } from '@/components/lab/lab-conversion';
 import { labProjects } from '@/data/lab-projects';
 import { LabProjectCard } from '@/components/lab/lab-card';
 import { ProductShowcase } from '@/components/lab/product-showcase-registry';
-import { BreadcrumbJsonLd } from '@/components/seo/json-ld';
+import { BreadcrumbJsonLd, ProjectJsonLd } from '@/components/seo/json-ld';
 
 interface LabSlugPageProps {
   params: Promise<{ slug: string }>;
@@ -99,6 +99,21 @@ export default async function LabConceptDetailPage({ params }: LabSlugPageProps)
           { name: 'Product Lab', path: '/lab' },
           { name: project.title, path: `/lab/${project.slug}` },
         ]}
+      />
+      <ProjectJsonLd
+        name={project.title}
+        description={project.description}
+        path={`/lab/${project.slug}`}
+        image={project.coverImage}
+        dateCreated={project.year}
+        category={project.industry}
+        technologies={[
+          ...project.stack.frontend,
+          ...project.stack.backend,
+          ...project.stack.database,
+          ...(project.stack.ai || []),
+        ]}
+        isSoftware={false}
       />
       <Navbar />
 

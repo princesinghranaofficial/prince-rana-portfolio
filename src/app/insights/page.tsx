@@ -35,19 +35,26 @@ export default function InsightsPage() {
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
+    '@id': `${absoluteUrl('/insights')}#collectionpage`,
     name: 'Technical Insights & Engineering Notes',
     description:
       'Articles on SaaS architecture, AI copilot engineering, full-stack systems, and product UI/UX by Prince Singh Rana.',
     url: absoluteUrl('/insights'),
+    isPartOf: {
+      '@id': `${siteConfig.url}/#website`,
+    },
     hasPart: publishedArticles.map((a) => ({
       '@type': 'Article',
+      '@id': `${absoluteUrl(`/insights/${a.slug}`)}#article`,
       headline: a.title,
       description: a.description,
       url: absoluteUrl(`/insights/${a.slug}`),
       datePublished: a.publishedAt,
       author: {
         '@type': 'Person',
+        '@id': `${siteConfig.url}/#person`,
         name: a.author.name,
+        url: `${siteConfig.url}/`,
       },
     })),
   };

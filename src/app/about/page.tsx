@@ -29,7 +29,7 @@ import {
   AISystemPhilosophyVisual 
 } from '@/components/about/about-architecture-visual';
 
-import { BreadcrumbJsonLd, JsonLdScript } from '@/components/seo/json-ld';
+import { BreadcrumbJsonLd, ProfilePageJsonLd } from '@/components/seo/json-ld';
 import { siteConfig } from '@/config/site';
 
 export const metadata: Metadata = {
@@ -49,29 +49,6 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const personSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: siteConfig.author.name,
-    jobTitle: siteConfig.primaryPositioning,
-    description:
-      'Senior full-stack product developer specializing in multi-tenant SaaS platforms, production AI copilots, and high-conversion web applications.',
-    url: siteConfig.url,
-    sameAs: [
-      siteConfig.social.linkedin,
-      siteConfig.social.twitter,
-      siteConfig.social.instagram,
-    ].filter(Boolean),
-    knowsAbout: [
-      'SaaS Architecture',
-      'Artificial Intelligence & LLM Integration',
-      'Full-Stack Web Development',
-      'Next.js & React',
-      'PostgreSQL & Supabase Row Level Security',
-      'Product UI/UX Design Systems',
-    ],
-  };
-
   const productThinkingSteps = [
     { title: 'Problem', subtitle: 'Commercial friction & user pain' },
     { title: 'User', subtitle: 'Motivation, habits & incentives' },
@@ -91,7 +68,7 @@ export default function AboutPage() {
           { name: 'About', path: '/about' },
         ]}
       />
-      <JsonLdScript data={personSchema} />
+      <ProfilePageJsonLd />
 
       <Navbar />
 

@@ -25,6 +25,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { projectsData } from '@/data/projects';
 import { ProjectTracker } from '@/components/analytics/trackers';
+import { BreadcrumbJsonLd, ProjectJsonLd } from '@/components/seo/json-ld';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -89,6 +90,23 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col">
       <ProjectTracker slug={project.slug} name={project.title} />
+      <BreadcrumbJsonLd
+        items={[
+          { name: 'Home', path: '/' },
+          { name: 'Work', path: '/work' },
+          { name: project.title, path: `/work/${project.slug}` },
+        ]}
+      />
+      <ProjectJsonLd
+        name={project.title}
+        description={project.description}
+        path={`/work/${project.slug}`}
+        image={project.coverImage}
+        dateCreated={project.year}
+        category={project.category}
+        technologies={project.technologies}
+        isSoftware={project.projectType === 'REAL PRODUCT'}
+      />
       <Navbar />
       <main id="main-content" className="flex-1 pt-32 pb-24">
         <Container size="default">
