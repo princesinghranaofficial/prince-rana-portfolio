@@ -1,0 +1,86 @@
+import * as React from 'react';
+import { Metadata } from 'next';
+import { Navbar } from '@/components/navigation/navbar';
+import { HeroSection } from '@/components/sections/hero-section';
+import { CollectAIShowcase } from '@/components/sections/collectai-showcase';
+import { AICFOShowcase } from '@/components/sections/ai-cfo-showcase';
+import { SecondaryWorkPreview } from '@/components/sections/secondary-work-preview';
+import { CapabilitiesEditorial } from '@/components/sections/capabilities-editorial';
+import { HowIWorkSection } from '@/components/sections/how-i-work-section';
+import { ProcessTimeline } from '@/components/sections/process-timeline';
+import { TechnologyStackSection } from '@/components/sections/technology-stack-section';
+import { ProductLabTeaser } from '@/components/sections/product-lab-teaser';
+import { InsightsPreview } from '@/components/sections/insights-preview';
+import { FinalConversionSection } from '@/components/sections/final-conversion-section';
+import { Footer } from '@/components/navigation/footer';
+
+export const metadata: Metadata = {
+  title: 'Prince Singh Rana — Full-Stack SaaS & AI Product Developer',
+  description:
+    'Full-stack developer building production-grade SaaS platforms, AI software, and high-performance web experiences for startups and ambitious businesses.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Prince Singh Rana — Full-Stack SaaS & AI Product Developer',
+    description:
+      'Full-stack developer building production-grade SaaS platforms, AI software, and high-performance web experiences for startups and ambitious businesses.',
+    url: '/',
+    siteName: 'Prince Singh Rana Portfolio',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Prince Singh Rana — Full-Stack SaaS & AI Product Developer',
+    description:
+      'Full-stack developer building production-grade SaaS platforms, AI software, and high-performance web experiences for startups and ambitious businesses.',
+  },
+};
+
+export default function HomePage() {
+  return (
+    <div className="min-h-screen bg-background text-text-primary flex flex-col selection:bg-accent selection:text-accent-foreground">
+      {/* Global Sticky Navigation */}
+      <Navbar />
+
+      <main id="main-content" className="flex-1">
+        {/* Hero Section */}
+        <HeroSection />
+
+        {/* Selected Work 01 — Flagship Accounts Receivable SaaS */}
+        <CollectAIShowcase />
+
+        {/* Selected Work 02 — Flagship Financial Intelligence SaaS */}
+        <AICFOShowcase />
+
+        {/* Secondary Work — 3 Concept Case Studies */}
+        <SecondaryWorkPreview />
+
+        {/* Capabilities Editorial — 4 Numbered Service Rows */}
+        <CapabilitiesEditorial />
+
+        {/* How I Work — 4 Engineering Principles */}
+        <HowIWorkSection />
+
+        {/* Process Timeline — 7-Step Engineering Lifecycle */}
+        <ProcessTimeline />
+
+        {/* Technology Stack — 4 Architecture Layers */}
+        <TechnologyStackSection />
+
+        {/* Product Lab Teaser — 15 Industry Concepts Matrix */}
+        <ProductLabTeaser />
+
+        {/* Insights Preview — Technical Guides & Articles */}
+        <InsightsPreview />
+
+        {/* Final Conversion Section — Dual CTAs & Engagement Terms */}
+        <FinalConversionSection />
+      </main>
+
+      {/* Global Minimal Footer */}
+      <Footer />
+    </div>
+  );
+}

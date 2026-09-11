@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* =========================================================
+     LIGHT THEME (PRIMARY DIRECTION: APPLE-INSPIRED RESTRAINT)
+     Crisp, bright, editorial, subtle layered neutral surfaces
+     ========================================================= */
+  --background: #fafafc;
+  --foreground: #111215;
+
+  /* Surfaces */
+  --surface: #ffffff;
+  --surface-elevated: #ffffff;
+  --surface-muted: #f3f3f6;
+
+  /* Extended Surface Steps for Tailwind */
+  --surface-50: #f8f8fb;
+  --surface-100: #f3f3f6;
+  --surface-200: #e7e7ec;
+  --surface-300: #d6d7de;
+  --surface-800: #27282d;
+  --surface-900: #191a1e;
+  --surface-950: #111215;
+
+  /* Typography Colors */
+  --text-primary: #111215;
+  --text-secondary: #51545e;
+  --text-tertiary: #838794;
+  --muted: #51545e;
+  --muted-foreground: #838794;
+
+  /* Borders */
+  --border: rgba(17, 18, 21, 0.08);
+  --border-strong: rgba(17, 18, 21, 0.16);
+  --border-interactive: rgba(17, 18, 21, 0.32);
+
+  /* Single Primary Accent: Tech Cobalt (Confident, restrained) */
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-foreground: #ffffff;
+  --accent-muted: rgba(37, 99, 235, 0.08);
+  --accent-glow: rgba(37, 99, 235, 0.18);
+
+  /* Status Colors */
+  --success: #059669;
+  --success-foreground: #ffffff;
+  --success-muted: rgba(5, 150, 105, 0.08);
+
+  --warning: #d97706;
+  --warning-foreground: #ffffff;
+  --warning-muted: rgba(217, 119, 6, 0.08);
+
+  --error: #dc2626;
+  --error-foreground: #ffffff;
+  --error-muted: rgba(220, 38, 38, 0.08);
+
+  /* Radii */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem;  /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem;    /* 16px */
+  --radius-full: 9999px;
+  --radius: 0.75rem;
+
+  /* Elevation Shadows (Restrained, realistic optical depth) */
+  --shadow-sm: 0 1px 2px 0 rgba(17, 18, 21, 0.04);
+  --shadow-md: 0 4px 12px -2px rgba(17, 18, 21, 0.06), 0 2px 4px -2px rgba(17, 18, 21, 0.03);
+  --shadow-lg: 0 12px 32px -4px rgba(17, 18, 21, 0.08), 0 4px 12px -2px rgba(17, 18, 21, 0.04);
+  --shadow-product: 0 24px 64px -12px rgba(17, 18, 21, 0.12), 0 8px 24px -4px rgba(17, 18, 21, 0.06);
+
+  /* Typography Stack */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+[data-theme='dark'] {
+  /* =========================================================
+     DARK THEME (SOPHISTICATED NEAR-BLACK, LAYERED SURFACES)
+     No blinding neon; disciplined contrast and subtle depth
+     ========================================================= */
+  --background: #0b0c0e;
+  --foreground: #f4f5f7;
+
+  /* Surfaces */
+  --surface: #121316;
+  --surface-elevated: #181a1e;
+  --surface-muted: #15161a;
+
+  /* Extended Surface Steps for Tailwind */
+  --surface-50: #15161a;
+  --surface-100: #1d1e23;
+  --surface-200: #292b32;
+  --surface-300: #3b3d46;
+  --surface-800: #c6c8d2;
+  --surface-900: #e2e4ec;
+  --surface-950: #f8f9fb;
+
+  /* Typography Colors */
+  --text-primary: #f4f5f7;
+  --text-secondary: #9da0ac;
+  --text-tertiary: #8b8f9d; /* Raised from #696c78 (3.74:1) → #8b8f9d (~4.7:1 on #0b0c0e) — WCAG AA */
+  --muted: #9da0ac;
+  --muted-foreground: #8b8f9d;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --border-interactive: rgba(255, 255, 255, 0.3);
+
+  /* Single Primary Accent: Balanced Bright Cobalt for dark background */
+  --accent: #3b82f6;
+  --accent-hover: #60a5fa;
+  --accent-foreground: #ffffff;
+  --accent-muted: rgba(59, 130, 246, 0.14);
+  --accent-glow: rgba(59, 130, 246, 0.24);
+
+  /* Status Colors */
+  --success: #10b981;
+  --success-foreground: #ffffff;
+  --success-muted: rgba(16, 185, 129, 0.14);
+
+  --warning: #f59e0b;
+  --warning-foreground: #ffffff;
+  --warning-muted: rgba(245, 158, 11, 0.14);
+
+  --error: #ef4444;
+  --error-foreground: #ffffff;
+  --error-muted: rgba(239, 68, 68, 0.14);
+
+  /* Elevation Shadows (Specular ambient edge in dark mode) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-lg: 0 12px 32px -4px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.07);
+  --shadow-product: 0 24px 64px -12px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.09);
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   TYPOGRAPHY SYSTEM (FLUID SCALES & CONTROLLED MEASURES)
+   ========================================================= */
+
+/* Display XL - Cinematic Desktop Hero moments */
+.type-display-xl {
+  font-size: clamp(2.75rem, 5vw + 1.25rem, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+
+/* Display - Major Hero headline */
+.type-display {
+  font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+/* H1 - Strong Page Headline */
+.type-h1 {
+  font-size: clamp(1.85rem, 3vw + 0.9rem, 3.25rem);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+/* H2 - Section Storytelling Headline */
+.type-h2 {
+  font-size: clamp(1.5rem, 2vw + 0.8rem, 2.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+/* H3 - Card / Sub-section Headline */
+.type-h3 {
+  font-size: clamp(1.25rem, 1.2vw + 0.75rem, 1.75rem);
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+/* H4 - Minor Title */
+.type-h4 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+/* Body Large - Lead Paragraphs */
+.type-body-large {
+  font-size: clamp(1.0625rem, 0.4vw + 0.95rem, 1.25rem);
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+}
+
+/* Body - Standard Reading Measure */
+.type-body {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+/* Body Small - Secondary Explanatory Copy */
+.type-body-small {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Label - UI Action Labels */
+.type-label {
+  font-size: 0.8125rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
+
+/* Caption - Microcopy / Timestamps */
+.type-caption {
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+/* Technical / Code */
+.type-code {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+/* Eyebrow Label */
+.type-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+/* Reading measure helper: 55-75 characters per line */
+.measure-reading {
+  max-width: 65ch;
+}
+
+.measure-headline {
+  max-width: 32ch;
+}
+
+/* Legacy utility aliases for Phase 1 components */
+.hero-heading {
+  font-size: clamp(2.75rem, 6vw + 1rem, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.h1-heading {
+  font-size: clamp(2.25rem, 4vw + 1rem, 4.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+
+.h2-heading {
+  font-size: clamp(1.75rem, 2.5vw + 1rem, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.h3-heading {
+  font-size: clamp(1.25rem, 1.5vw + 0.8rem, 2rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  font-weight: 600;
+}
+
+.body-lead {
+  font-size: clamp(1.05rem, 0.5vw + 0.95rem, 1.25rem);
+  line-height: 1.6;
+}
+
+.body-regular {
+  font-size: clamp(0.95rem, 0.2vw + 0.9rem, 1.1rem);
+  line-height: 1.65;
+}
+
+/* =========================================================
+   ACCESSIBILITY & SELECTION SYSTEM
+   ========================================================= */
+
+/* Brand Selection Styling */
+::selection {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: var(--accent);
+  color: #ffffff;
+}
+
+/* Mandatory Focus Visible Styling */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Skip Navigation Link — visible on keyboard focus, hidden otherwise */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.625rem 1.25rem;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  z-index: 9999;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: top 0.15s ease-out;
+}
+.skip-link:focus {
+  top: 0;
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Subtle, Disciplined Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-300);
+  border-radius: 4px;
+}
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: var(--surface-200);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* Motion Preferences: Respect prefers-reduced-motion unconditionally */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
