@@ -742,7 +742,7 @@ export function MultiStepInquiryForm() {
               type="text"
               value={targetLaunchDate}
               onChange={(e) => setTargetLaunchDate(e.target.value)}
-              placeholder="e.g. By end of Q2, or June 15th for demo day"
+              placeholder="e.g. In 4–6 weeks, or before launch date"
               className="w-full px-4 py-2.5 rounded-xl bg-surface-100 dark:bg-surface-950 border border-border/70 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:border-accent transition-all"
             />
           </div>

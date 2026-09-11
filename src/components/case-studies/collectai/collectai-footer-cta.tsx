@@ -71,7 +71,7 @@ export function CollectAIFooterCTA() {
                 </li>
                 <li className="flex items-start gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
-                  <span>Sub-second multi-tenant PostgreSQL performance via RLS.</span>
+                  <span>Optimized multi-tenant PostgreSQL queries via index-backed RLS.</span>
                 </li>
               </ul>
             </div>

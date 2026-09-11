@@ -23,7 +23,7 @@ const architectureLayers: ArchitectureLayer[] = [
     name: 'Product Interface',
     category: 'Client & Edge Presentation',
     icon: LayoutGrid,
-    description: 'Sub-second interaction models, responsive viewport math, and tokenized design systems.',
+    description: 'Responsive interaction models, viewport math, and tokenized design systems.',
     technologies: [
       { name: 'Next.js (App Router)', role: 'Streaming Server Components' },
       { name: 'React 19', role: 'Concurrent rendering & optimistic actions' },

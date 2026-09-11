@@ -63,8 +63,8 @@ export function AICFOShowcase() {
                   app.aicfo.io / scenario-forecasting
                 </span>
               </div>
-              <span className="text-[11px] font-mono text-text-secondary hidden sm:inline-block">
-                Demo Environment • Sample Financial Data
+              <span className="text-[11px] font-mono text-text-secondary">
+                Demo environment · Illustrative data
               </span>
             </div>
 

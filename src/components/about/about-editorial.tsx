@@ -57,7 +57,7 @@ const corePrinciples = [
     title: 'Production Before Polish Alone',
     premise: 'Visual restraint is essential, but it must be backed by hardened infrastructure.',
     narrative:
-      'A sleek interface on an unsecured database is a liability. Every application is built with production standards from sprint one: Row Level Security (RLS) data isolation, end-to-end TypeScript contracts, sub-second latency, accessible DOM hierarchies (WCAG 2.1 AA), and zero-warning deployment pipelines.',
+      'A sleek interface on an unsecured database is a liability. Every application is built with production standards from sprint one: Row Level Security (RLS) data isolation, end-to-end TypeScript contracts, optimized latency, accessible DOM hierarchies (built toward WCAG 2.2 AA), and zero-warning deployment pipelines.',
     impact: 'Protects customer data, prevents regressions, and scales cleanly without fragile hacks.',
   },
 ];
@@ -150,7 +150,7 @@ const capabilityGroups: CapabilityGroup[] = [
       'Tokenized design systems (Tailwind CSS, Radix UI)',
       'Data-dense analytics dashboards & charts',
       'Fluid responsive viewports (360px to 1728px)',
-      'Accessible interaction hierarchy (WCAG 2.1 AA)',
+      'Accessible interaction hierarchy (built toward WCAG 2.2 AA)',
     ],
     proofLabel: 'AI CFO & Copilot',
     proofType: 'REAL PRODUCT',
@@ -161,7 +161,7 @@ const capabilityGroups: CapabilityGroup[] = [
     name: 'Full-Stack Engineering',
     focus: 'End-to-end type safety & edge execution',
     items: [
-      'Next.js 16 App Router & Server Actions',
+      'Next.js App Router & Server Actions',
       'TypeScript strict mode across entire stack',
       'PostgreSQL database design & complex migrations',
       'Row Level Security (RLS) multi-tenant protection',
@@ -256,7 +256,7 @@ export function CapabilitiesWithProof() {
                       : 'bg-accent/10 text-accent border border-accent/20'
                   )}
                 >
-                  {group.proofType}
+                  {group.proofType === 'REAL PRODUCT' ? 'Built Product' : group.proofType}
                 </span>
               </div>
 
@@ -323,8 +323,8 @@ export function TechnicalPhilosophy() {
   const stackCategories = [
     {
       layer: 'Interface Layer',
-      tech: 'TypeScript, Next.js 16 (App Router), React 19, Tailwind CSS, Framer Motion',
-      rationale: 'Sub-second server rendering, fluid component animation, and zero-runtime CSS footprint.',
+      tech: 'TypeScript, Next.js (App Router), React 19, Tailwind CSS, Framer Motion',
+      rationale: 'Fast server rendering, fluid component animation, and zero-runtime CSS footprint.',
     },
     {
       layer: 'Application & Logic',
@@ -519,7 +519,7 @@ export function WhatIOptimizeFor() {
     { label: 'Clarity', desc: 'Unambiguous user workflows and intuitive data presentation.' },
     { label: 'Usability', desc: 'Effortless operational ergonomics for high-frequency workflows.' },
     { label: 'Maintainability', desc: 'Clean, modular, zero-warning TypeScript codebases.' },
-    { label: 'Performance', desc: 'Sub-second TTFB, edge-cached assets, and low client overhead.' },
+    { label: 'Performance', desc: 'Fast TTFB, edge-cached assets, and low client overhead.' },
     { label: 'Security', desc: 'Row Level Security data isolation and strict input sanitization.' },
     { label: 'Extensibility', desc: 'Modular domain architectures ready for future feature scaling.' },
   ];

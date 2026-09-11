@@ -114,7 +114,7 @@ export default async function ProjectCaseStudyPage({ params }: PageProps) {
                 }
                 size="md"
               >
-                {project.projectType}
+                {project.projectType === 'REAL PRODUCT' ? 'Built Product' : project.projectType}
               </Badge>
               <Badge variant="outline" size="md">
                 {project.category}

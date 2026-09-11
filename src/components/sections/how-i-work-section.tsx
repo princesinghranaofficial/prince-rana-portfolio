@@ -24,7 +24,7 @@ const principles = [
     number: '03',
     icon: ShieldCheck,
     title: 'Built for Production from Day One',
-    tagline: 'Multi-tenant schemas, strict security, and sub-second speed.',
+    tagline: 'Multi-tenant schemas, strict security, and optimized performance.',
     description:
       'PostgreSQL schemas protected by Row Level Security (RLS), type-safe end-to-end contracts, automated migrations, and global edge delivery. No fragile throwaway prototypes that require total rewrites.',
   },

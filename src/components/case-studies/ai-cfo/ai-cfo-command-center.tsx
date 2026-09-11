@@ -29,9 +29,14 @@ export function AICFOCommandCenter() {
         <div className="space-y-12">
           {/* Section Header */}
           <div className="max-w-3xl space-y-4">
-            <span className="text-xs font-mono text-emerald-500 uppercase tracking-widest font-semibold block">
-              04 &middot; FINANCIAL COMMAND CENTER
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-mono text-emerald-500 uppercase tracking-widest font-semibold block">
+                04 &middot; FINANCIAL COMMAND CENTER
+              </span>
+              <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-muted border border-border/80 text-muted-foreground">
+                Demo environment · Illustrative data
+              </span>
+            </div>
             <H2 className="text-2xl sm:text-4xl font-bold tracking-tight text-foreground">
               A 4-tier decision hierarchy engineered for clarity.
             </H2>

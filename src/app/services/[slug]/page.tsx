@@ -367,7 +367,7 @@ export default async function ServiceDetailPage({ params }: ServiceDetailPagePro
                               ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
                               : 'bg-purple-500/10 text-purple-400 border border-purple-500/20'
                           }`}>
-                            {proof.type}
+                            {proof.type === 'REAL PRODUCT' ? 'Built Product' : proof.type}
                           </span>
                         </div>
                         <p className="text-[11px] text-muted-foreground leading-relaxed">

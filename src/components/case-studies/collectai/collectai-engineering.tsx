@@ -97,7 +97,7 @@ export function CollectAIEngineering() {
               <div className="space-y-1">
                 <span className="text-[10px] text-text-tertiary uppercase font-bold block">Layer 04 • Settlement & Infrastructure</span>
                 <h4 className="font-bold text-text-primary text-sm">Razorpay Webhooks + Vercel Edge + Cloudflare CDN</h4>
-                <p className="text-[11px] text-text-secondary">Cryptographically verified payment callbacks, sub-second edge distribution, and automated SSL termination.</p>
+                <p className="text-[11px] text-text-secondary">Cryptographically verified payment callbacks, global edge distribution, and automated SSL termination.</p>
               </div>
               <span className="px-2.5 py-1 rounded bg-surface border border-border text-text-primary text-[11px] shrink-0">
                 Edge Delivery
@@ -245,7 +245,7 @@ export function CollectAIEngineering() {
               <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 space-y-1">
                 <span className="text-[10px] text-emerald-600 dark:text-emerald-400 uppercase font-bold block">The Technical Result</span>
                 <p className="text-emerald-700 dark:text-emerald-300 text-[11px] leading-relaxed">
-                  Aging schedule dashboard load times dropped from 840ms to under 45ms, maintaining instant sub-second page rendering even with dense multi-currency tables.
+                  Reduced repeated aging-query overhead through compound indexing and cached cohort views.
                 </p>
               </div>
             </div>
@@ -280,7 +280,7 @@ export function CollectAIEngineering() {
               <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 space-y-1">
                 <span className="text-[10px] text-emerald-600 dark:text-emerald-400 uppercase font-bold block">The Technical Result</span>
                 <p className="text-emerald-700 dark:text-emerald-300 text-[11px] leading-relaxed">
-                  Zero possibility of cross-tenant data leakage. Automated test suites verify that attempting queries across organization boundaries fails unconditionally.
+                  Database-level RLS provides an additional tenant-isolation boundary, with automated authorization tests covering cross-organization access.
                 </p>
               </div>
             </div>
@@ -315,7 +315,7 @@ export function CollectAIEngineering() {
               <div className="p-4 rounded-xl bg-emerald-500/5 border border-emerald-500/20 space-y-1">
                 <span className="text-[10px] text-emerald-600 dark:text-emerald-400 uppercase font-bold block">The Technical Result</span>
                 <p className="text-emerald-700 dark:text-emerald-300 text-[11px] leading-relaxed">
-                  Finance teams gain 90% time savings on drafting reminder copy while retaining 100% human oversight before any communication leaves the organization.
+                  Reduces repetitive reminder-drafting work while preserving human approval before communication is sent.
                 </p>
               </div>
             </div>

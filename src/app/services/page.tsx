@@ -353,7 +353,7 @@ export default function ServicesPage() {
                                       ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
                                       : 'bg-purple-500/10 text-purple-400 border border-purple-500/20'
                                   }`}>
-                                    {proof.type}
+                                    {proof.type === 'REAL PRODUCT' ? 'Built Product' : proof.type}
                                   </span>
                                 </div>
                                 <span className="text-[11px] text-muted-foreground line-clamp-1">
@@ -444,7 +444,7 @@ export default function ServicesPage() {
                 },
                 {
                   prob: 'Your marketing website fails to reflect the sophistication of your product.',
-                  sol: 'I engineer a custom Next.js marketing site with editorial typography, sub-second LCP, and conversion-optimized CTA funnels.',
+                  sol: 'I engineer a custom Next.js marketing site with editorial typography, optimized LCP, and conversion-optimized CTA funnels.',
                 },
               ].map((item, idx) => (
                 <div

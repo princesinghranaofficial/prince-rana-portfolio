@@ -77,8 +77,8 @@ export function CollectAIShowcase() {
                   app.collectai.io / accounts-receivable
                 </span>
               </div>
-              <span className="text-[11px] font-mono text-text-secondary hidden sm:inline-block">
-                Demo Environment • Multi-Tenant PostgreSQL RLS
+              <span className="text-[11px] font-mono text-text-secondary">
+                Demo environment · Illustrative data
               </span>
             </div>
 

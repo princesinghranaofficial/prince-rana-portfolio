@@ -251,7 +251,7 @@ export default async function InsightArticlePage({ params }: PageProps) {
                                 : 'bg-accent/10 text-accent'
                             )}
                           >
-                            {proj.type}
+                            {proj.type === 'REAL PRODUCT' ? 'Built Product' : proj.type}
                           </span>
                         </div>
                         <p className="text-[11px] text-muted-foreground line-clamp-2 leading-relaxed">

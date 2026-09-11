@@ -114,7 +114,7 @@ export function AICFOHero() {
             </div>
             <div className="flex items-center gap-3">
               <span className="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px]">
-                Deterministic Demo Dataset
+                Demo environment · Illustrative data
               </span>
               <span className="text-muted-foreground">Q3 Fiscal Year</span>
             </div>

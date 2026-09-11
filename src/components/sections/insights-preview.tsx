@@ -24,7 +24,7 @@ export function InsightsPreview() {
         <SectionHeader
           eyebrow="Writing & Technical Guides"
           title="Insights on building SaaS and AI products."
-          description="Deep-dive architectural essays, cost analyses, and engineering blueprints written from the trenches of real product development."
+          description="Deep-dive architectural essays, cost analyses, and engineering blueprints written from the trenches of production SaaS engineering."
           action={
             <Link href="/insights">
               <Button variant="outline" size="sm" rightIcon={<ArrowUpRight className="w-3.5 h-3.5" />}>

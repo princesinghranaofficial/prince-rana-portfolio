@@ -33,9 +33,14 @@ export function CollectAICoreExperience() {
           {/* ========================================================================= */}
           <div className="rounded-3xl border border-border bg-surface p-6 sm:p-10 space-y-8">
             <div className="max-w-2xl space-y-2">
-              <span className="font-mono text-xs font-bold text-accent tracking-wider uppercase block">
-                01 • Tactical Operational View
-              </span>
+              <div className="flex items-center gap-3">
+                <span className="font-mono text-xs font-bold text-accent tracking-wider uppercase block">
+                  01 • Tactical Operational View
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-muted border border-border/80 text-text-tertiary">
+                  Demo environment · Illustrative data
+                </span>
+              </div>
               <h3 className="type-h3 text-text-primary">
                 Receivables Aging & Priority Execution View
               </h3>
@@ -222,9 +227,14 @@ export function CollectAICoreExperience() {
           {/* ========================================================================= */}
           <div className="rounded-3xl border border-border bg-surface p-6 sm:p-10 space-y-8">
             <div className="max-w-2xl space-y-2">
-              <span className="font-mono text-xs font-bold text-accent tracking-wider uppercase block">
-                04 • Executive Visibility
-              </span>
+              <div className="flex items-center gap-3">
+                <span className="font-mono text-xs font-bold text-accent tracking-wider uppercase block">
+                  04 • Executive Visibility
+                </span>
+                <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-surface-muted border border-border/80 text-text-tertiary">
+                  Demo environment · Illustrative data
+                </span>
+              </div>
               <h3 className="type-h3 text-text-primary">
                 Cash Flow Recovery Trends & DSO Tracking
               </h3>

@@ -123,7 +123,7 @@ export const investmentOptions: InvestmentOption[] = [
     startingPrice: 5000,
     startingPriceDisplay: '$5,000+',
     headline: 'Context-aware AI copilots, structured RAG pipelines, and deterministic workflows.',
-    bestFor: 'Founders and businesses embedding AI into real product workflows.',
+    bestFor: 'Founders and businesses embedding AI into production product workflows.',
     typicalScope: [
       'AI product architecture & model orchestration',
       'Context-aware AI copilots & assistant panels',

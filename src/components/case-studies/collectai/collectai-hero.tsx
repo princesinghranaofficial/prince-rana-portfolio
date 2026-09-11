@@ -91,10 +91,10 @@ export function CollectAIHero() {
               </div>
               <div className="flex items-center gap-3">
                 <span className="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[11px] border border-emerald-500/20 font-semibold">
-                  ● Autonomous Engine Active
+                  Demo environment · Illustrative data
                 </span>
                 <span className="text-text-tertiary text-[11px] hidden md:inline-block">
-                  Tenant: Acronis Logistics Ltd.
+                  Simulated Tenant: Acronis Logistics Ltd.
                 </span>
               </div>
             </div>

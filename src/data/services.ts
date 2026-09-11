@@ -10,7 +10,7 @@ export const servicesData: Service[] = [
     shortDescription: 'Full-cycle engineering for multi-tenant SaaS platforms, database architecture, RBAC authentication, subscription billing, and production deployment.',
     fullDescription: 'I partner with founders, venture-backed startups, and growing technology businesses to design and engineer production-grade SaaS products. Rather than piecing together disparate freelancers or navigating bloated agency overhead, you get single-source architectural ownership: from multi-tenant PostgreSQL data models and Row-Level Security to high-density reactive dashboards and automated Stripe/Razorpay billing engines.',
     problem: 'Founders and businesses often struggle with bloated agency timelines, brittle database schemas that cannot scale, fragile authentication, and interfaces that feel like generic UI templates rather than serious commercial software.',
-    solution: 'I architect hardened, type-safe SaaS foundations using Next.js, TypeScript, Node.js, and PostgreSQL/Supabase. Every workflow is engineered with strict tenancy separation, automated subscription state synchronization, and sub-second UI responsiveness.',
+    solution: 'I architect hardened, type-safe SaaS foundations using Next.js, TypeScript, Node.js, and PostgreSQL/Supabase. Every workflow is engineered with strict tenancy separation, automated subscription state synchronization, and fast UI responsiveness.',
     audience: [
       'Founders launching new venture-backed or bootstrapped SaaS platforms',
       'B2B software companies replacing legacy systems or rewriting v1 prototypes',
@@ -444,7 +444,7 @@ export const servicesData: Service[] = [
     shortTitle: 'Website Development',
     tagline: 'Conversion-engineered marketing websites for SaaS & technology companies.',
     shortDescription: 'High-performance marketing websites engineered with editorial typography, technical SEO, conversion architecture, and 95+ Core Web Vitals.',
-    fullDescription: 'A technology company’s website is its primary commercial conversion asset. Generic WordPress templates and cookie-cutter Webflow clones look amateurish, load slowly, and fail to convince enterprise buyers. I engineer custom marketing websites for SaaS products, AI startups, and digital agencies using Next.js and Tailwind CSS—combining Apple-inspired aesthetic restraint with rigorous technical SEO, sub-second page loads, and clear conversion funnels.',
+    fullDescription: 'A technology company’s website is its primary commercial conversion asset. Generic WordPress templates and cookie-cutter Webflow clones look amateurish, load slowly, and fail to convince enterprise buyers. I engineer custom marketing websites for SaaS products, AI startups, and digital agencies using Next.js and Tailwind CSS—combining Apple-inspired aesthetic restraint with rigorous technical SEO, fast page loads, and clear conversion funnels.',
     problem: 'SaaS and tech websites often suffer from slow load times, generic visual cliches, poor mobile responsiveness, broken metadata, and vague copy that fails to communicate product value.',
     solution: 'I build custom, accessible marketing experiences that load instantly, pass Core Web Vitals with 95+ scores, structure rich search snippets, and guide qualified prospects directly to booking demos or starting projects.',
     audience: [
@@ -516,7 +516,7 @@ export const servicesData: Service[] = [
     faqs: [
       {
         question: 'How is this different from a Webflow or WordPress site?',
-        answer: 'Next.js websites offer unmatched speed (sub-second page transitions), zero plugin bloat, custom interactive product widgets, complete source code control, and superior Core Web Vitals that directly enhance search ranking.',
+        answer: 'Next.js websites offer unmatched speed (fast page transitions), zero plugin bloat, custom interactive product widgets, complete source code control, and superior Core Web Vitals that directly enhance search ranking.',
       },
       {
         question: 'Can I easily update content after the site launches?',
