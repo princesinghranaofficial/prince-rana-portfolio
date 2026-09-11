@@ -158,6 +158,22 @@ export function ArticleBodyRenderer({ content, className }: ArticleBodyRendererP
       }
 
       // Headings
+      if (line.startsWith('#### ')) {
+        const text = line.replace('#### ', '').trim();
+        const id = slugify(text);
+        nodes.push(
+          <h4
+            key={key++}
+            id={id}
+            className="text-base sm:text-lg font-bold text-foreground mt-8 mb-3 tracking-tight scroll-mt-28"
+          >
+            {text}
+          </h4>
+        );
+        i++;
+        continue;
+      }
+
       if (line.startsWith('### ')) {
         const text = line.replace('### ', '').trim();
         const id = slugify(text);
@@ -190,23 +206,43 @@ export function ArticleBodyRenderer({ content, className }: ArticleBodyRendererP
         continue;
       }
 
-      // Unordered list item
+      // Unordered list item or Checklist item
       if (line.trim().startsWith('- ') || line.trim().startsWith('* ')) {
-        const listItems: string[] = [];
+        const listItems: { text: string; isTask?: boolean; checked?: boolean }[] = [];
         while (
           i < lines.length &&
           (lines[i].trim().startsWith('- ') || lines[i].trim().startsWith('* '))
         ) {
-          listItems.push(lines[i].trim().replace(/^[-*]\s+/, ''));
+          const raw = lines[i].trim().replace(/^[-*]\s+/, '');
+          if (raw.startsWith('[ ] ')) {
+            listItems.push({ text: raw.replace(/^\[ \]\s+/, ''), isTask: true, checked: false });
+          } else if (raw.startsWith('[x] ') || raw.startsWith('[X] ')) {
+            listItems.push({ text: raw.replace(/^\[[xX]\]\s+/, ''), isTask: true, checked: true });
+          } else {
+            listItems.push({ text: raw });
+          }
           i++;
         }
 
         nodes.push(
-          <ul key={key++} className="space-y-2 my-4 pl-2 list-none">
+          <ul key={key++} className="space-y-2.5 my-4 pl-2 list-none">
             {listItems.map((item, lIdx) => (
               <li key={lIdx} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                <span className="text-accent font-mono select-none mt-0.5">&bull;</span>
-                <span>{formatInline(item)}</span>
+                {item.isTask ? (
+                  <span
+                    className={cn(
+                      'inline-flex items-center justify-center w-4 h-4 rounded border mt-0.5 shrink-0 select-none text-[10px]',
+                      item.checked
+                        ? 'border-accent bg-accent text-white font-bold'
+                        : 'border-border/80 bg-surface-100/60 dark:bg-surface-800/60 text-muted-foreground'
+                    )}
+                  >
+                    {item.checked ? '✓' : ''}
+                  </span>
+                ) : (
+                  <span className="text-accent font-mono select-none mt-0.5">&bull;</span>
+                )}
+                <span>{formatInline(item.text)}</span>
               </li>
             ))}
           </ul>

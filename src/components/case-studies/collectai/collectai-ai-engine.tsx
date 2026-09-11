@@ -158,7 +158,7 @@ export function CollectAIEngine() {
             {/* Question */}
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-[10px] font-bold shrink-0">
-                AV
+                PR
               </div>
               <div className="p-3 rounded-xl bg-surface border border-border text-text-primary">
                 &ldquo;Which invoices are at high risk of slipping past 60 days this week?&rdquo;

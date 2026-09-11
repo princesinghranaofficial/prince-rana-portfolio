@@ -155,7 +155,7 @@ export default async function InsightArticlePage({ params }: PageProps) {
             <div className="flex items-center justify-between pt-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-foreground text-background flex items-center justify-center font-mono text-xs font-bold shadow-xs">
-                  AV
+                  PR
                 </div>
                 <div>
                   <span className="text-sm font-bold text-foreground block">
@@ -202,7 +202,7 @@ export default async function InsightArticlePage({ params }: PageProps) {
               {/* Author Bio Card */}
               <div className="mt-10 p-6 rounded-2xl border border-border/80 bg-surface-50/60 dark:bg-surface-900/60 flex flex-col sm:flex-row items-start sm:items-center gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-foreground text-background flex items-center justify-center font-mono text-sm font-bold shrink-0">
-                  AV
+                  PR
                 </div>
                 <div className="space-y-1">
                   <div className="flex items-center gap-2">

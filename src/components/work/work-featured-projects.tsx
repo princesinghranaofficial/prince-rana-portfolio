@@ -253,7 +253,7 @@ export function WorkFeaturedProjects() {
               <div className="p-4 rounded-xl border border-border bg-surface-muted space-y-3 font-mono text-xs">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 rounded-full bg-accent text-accent-foreground flex items-center justify-center text-[10px] font-bold shrink-0">
-                    AV
+                    PR
                   </div>
                   <div className="bg-surface p-3 rounded-lg border border-border text-text-primary">
                     &ldquo;If we hire 2 senior full-stack developers at $9K/mo each starting next quarter, what does our runway look like?&rdquo;

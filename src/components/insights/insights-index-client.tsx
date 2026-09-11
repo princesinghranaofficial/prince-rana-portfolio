@@ -197,7 +197,7 @@ export function InsightsIndexClient({ articles }: InsightsIndexClientProps) {
                 </span>
                 <div className="flex items-center gap-3">
                   <div className="w-9 h-9 rounded-xl bg-foreground text-background flex items-center justify-center font-mono text-xs font-bold">
-                    AV
+                    PR
                   </div>
                   <div>
                     <span className="text-xs font-bold text-foreground block">
@@ -213,11 +213,10 @@ export function InsightsIndexClient({ articles }: InsightsIndexClientProps) {
               <Link
                 href={`/insights/${featuredArticle.slug}`}
                 onClick={() => handleArticleClick(featuredArticle.slug)}
-                className="w-full"
+                className="inline-flex items-center justify-between w-full h-10 px-4 py-2 font-medium text-sm rounded-lg bg-foreground text-background hover:opacity-90 shadow-sm hover:shadow-md active:translate-y-[1px] active:scale-[0.99] transition-all duration-150 ease-out select-none group"
               >
-                <Button variant="primary" className="w-full justify-between" rightIcon={<ArrowUpRight className="w-4 h-4" />}>
-                  <span>Read Full Article</span>
-                </Button>
+                <span>Read Full Article</span>
+                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </Link>
             </div>
           </div>
