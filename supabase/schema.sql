@@ -11,15 +11,22 @@ CREATE TABLE IF NOT EXISTS public.inquiries (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
-    services TEXT[] NOT NULL,
-    budget VARCHAR(50) NOT NULL,
+    project_type VARCHAR(100) NOT NULL,
+    project_stage VARCHAR(100) NOT NULL,
+    scope TEXT[] NOT NULL DEFAULT '{}',
+    description TEXT NOT NULL,
+    reference_url TEXT,
+    budget_range VARCHAR(50) NOT NULL,
     timeline VARCHAR(50) NOT NULL,
+    target_launch_date VARCHAR(100),
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     company VARCHAR(255),
-    website VARCHAR(255),
-    description TEXT NOT NULL,
-    status VARCHAR(50) DEFAULT 'new' NOT NULL CHECK (status IN ('new', 'qualified', 'contacted', 'proposal', 'won', 'lost'))
+    company_website TEXT,
+    country_or_timezone VARCHAR(100),
+    preferred_contact VARCHAR(50) DEFAULT 'Email',
+    status VARCHAR(50) DEFAULT 'new' NOT NULL CHECK (status IN ('new', 'qualified', 'contacted', 'proposal', 'won', 'lost')),
+    source VARCHAR(100) DEFAULT 'direct'
 );
 
 -- Index for admin queries and sorting
