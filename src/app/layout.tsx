@@ -34,6 +34,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  verification: {
+    other: {
+      'msvalidate.01': '912AF5D43E44B3C67EEBFAA674E16A38',
+    },
+  },
   openGraph: {
     type: 'website',
     locale: siteConfig.locale,
