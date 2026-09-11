@@ -63,14 +63,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       ? { index: true, follow: true }
       : { index: false, follow: true },
     openGraph: {
-      title: `${project.title} — ${project.category} | Prince Singh Rana`,
+      title: `${project.title} — ${project.category} | Prince Rana`,
       description: project.description,
       images: [project.coverImage],
       url: `/work/${project.slug}`,
+      siteName: 'Prince Rana',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${project.title} — ${project.category} | Prince Singh Rana`,
+      title: `${project.title} — ${project.category} | Prince Rana`,
       description: project.description,
     },
   };

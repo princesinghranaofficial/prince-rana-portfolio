@@ -40,11 +40,18 @@ export const metadata: Metadata = {
     canonical: '/about',
   },
   openGraph: {
-    title: 'About Prince Singh Rana — Full-Stack SaaS & AI Product Developer',
+    title: 'About Prince Rana — Full-Stack SaaS & AI Product Developer',
     description:
       'Full-Stack SaaS and AI product developer turning complex product ideas into clear, usable, and production-minded software. Product thinking and engineering in one workflow.',
     url: '/about',
+    siteName: 'Prince Rana',
     type: 'profile',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Prince Rana — Full-Stack SaaS & AI Product Developer',
+    description:
+      'Full-Stack SaaS and AI product developer turning complex product ideas into clear, usable, and production-minded software. Product thinking and engineering in one workflow.',
   },
 };
 

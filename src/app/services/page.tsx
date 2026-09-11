@@ -43,9 +43,16 @@ export const metadata: Metadata = {
     canonical: '/services',
   },
   openGraph: {
-    title: 'SaaS, AI & Full-Stack Development Services | Prince Singh Rana',
+    title: 'SaaS, AI & Full-Stack Development Services | Prince Rana',
     description: 'From product idea to production-ready software. Full-stack SaaS platforms, AI product engineering, and high-converting technology websites.',
     url: '/services',
+    siteName: 'Prince Rana',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SaaS, AI & Full-Stack Development Services | Prince Rana',
+    description: 'From product idea to production-ready software. Full-stack SaaS platforms, AI product engineering, and high-converting technology websites.',
   },
 };
 

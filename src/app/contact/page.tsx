@@ -17,9 +17,16 @@ export const metadata: Metadata = {
     canonical: '/contact',
   },
   openGraph: {
-    title: 'Contact Prince Singh Rana | Full-Stack SaaS & AI Developer',
+    title: 'Contact Prince Rana | Full-Stack SaaS & AI Developer',
     description: 'Get in touch to discuss your SaaS application, AI copilot, or web product engineering needs.',
     url: '/contact',
+    siteName: 'Prince Rana',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Prince Rana | Full-Stack SaaS & AI Developer',
+    description: 'Get in touch to discuss your SaaS application, AI copilot, or web product engineering needs.',
   },
 };
 

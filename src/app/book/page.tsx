@@ -16,11 +16,18 @@ export const metadata: Metadata = {
     canonical: '/book',
   },
   openGraph: {
-    title: 'Book a Discovery Call | Prince Singh Rana — Full-Stack SaaS & AI Developer',
+    title: 'Book a Discovery Call | Prince Rana — Full-Stack SaaS & AI Developer',
     description:
       'Schedule a 30-minute discovery call to evaluate your SaaS product, AI copilot architecture, project scope, and technical roadmap.',
     url: '/book',
+    siteName: 'Prince Rana',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Book a Discovery Call | Prince Rana — Full-Stack SaaS & AI Developer',
+    description:
+      'Schedule a 30-minute discovery call to evaluate your SaaS product, AI copilot architecture, project scope, and technical roadmap.',
   },
 };
 

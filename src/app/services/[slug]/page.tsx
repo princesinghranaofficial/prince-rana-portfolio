@@ -62,6 +62,7 @@ export async function generateMetadata({ params }: ServiceDetailPageProps): Prom
       title: service.seo.title,
       description: service.seo.description,
       url: `/services/${service.slug}`,
+      siteName: 'Prince Rana',
       type: 'website',
     },
     twitter: {

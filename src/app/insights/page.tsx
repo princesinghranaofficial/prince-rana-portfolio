@@ -20,11 +20,18 @@ export const metadata: Metadata = {
     canonical: '/insights',
   },
   openGraph: {
-    title: 'Insights — SaaS Architecture, AI Products & Engineering | Prince Singh Rana',
+    title: 'Insights — SaaS Architecture, AI Products & Engineering | Prince Rana',
     description:
       'Practical thinking on SaaS architecture, AI product design, full-stack engineering, product UX, and the decisions involved in taking software from idea to production.',
     url: '/insights',
+    siteName: 'Prince Rana',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Insights — SaaS Architecture, AI Products & Engineering | Prince Rana',
+    description:
+      'Practical thinking on SaaS architecture, AI product design, full-stack engineering, product UX, and the decisions involved in taking software from idea to production.',
   },
 };
 

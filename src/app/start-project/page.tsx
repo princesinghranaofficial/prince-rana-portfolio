@@ -18,11 +18,18 @@ export const metadata: Metadata = {
     canonical: '/start-project',
   },
   openGraph: {
-    title: 'Start a Project | Prince Singh Rana — Full-Stack SaaS & AI Developer',
+    title: 'Start a Project | Prince Rana — Full-Stack SaaS & AI Developer',
     description:
       'Share your product requirements, current stage, scope, and budget. Direct technical qualification for SaaS platforms, AI copilots, and web engineering.',
     url: '/start-project',
+    siteName: 'Prince Rana',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Start a Project | Prince Rana — Full-Stack SaaS & AI Developer',
+    description:
+      'Share your product requirements, current stage, scope, and budget. Direct technical qualification for SaaS platforms, AI copilots, and web engineering.',
   },
 };
 

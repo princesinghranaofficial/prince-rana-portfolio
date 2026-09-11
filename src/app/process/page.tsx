@@ -22,11 +22,18 @@ export const metadata: Metadata = {
     canonical: '/process',
   },
   openGraph: {
-    title: 'Product Development Process | Prince Singh Rana',
+    title: 'Product Development Process | Prince Rana',
     description:
       'A structured 8-stage engineering methodology from commercial discovery and PostgreSQL schema architecture to full-stack build, validation, and production deployment.',
     url: '/process',
+    siteName: 'Prince Rana',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Product Development Process | Prince Rana',
+    description:
+      'A structured 8-stage engineering methodology from commercial discovery and PostgreSQL schema architecture to full-stack build, validation, and production deployment.',
   },
 };
 
