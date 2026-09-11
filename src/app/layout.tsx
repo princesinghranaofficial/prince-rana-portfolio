@@ -77,8 +77,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${fontSans.variable} ${fontMono.variable}`}>
-      <body className="antialiased min-h-screen bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
+      <head>
         <GoogleAnalytics />
+      </head>
+      <body className="antialiased min-h-screen bg-background text-foreground selection:bg-accent selection:text-accent-foreground">
         <AnalyticsListener />
         <ThemeProvider
           attribute="data-theme"
