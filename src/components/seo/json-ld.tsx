@@ -49,6 +49,7 @@ export function PersonJsonLd() {
     url: siteConfig.url,
     email: siteConfig.author.email,
     sameAs: [
+      siteConfig.social.github,
       siteConfig.social.linkedin,
       siteConfig.social.twitter,
       siteConfig.social.instagram,

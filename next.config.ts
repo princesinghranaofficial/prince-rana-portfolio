@@ -18,6 +18,39 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.princesinghrana.in',
+          },
+        ],
+        destination: 'https://princesinghrana.in/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'princesinghrana.online',
+          },
+        ],
+        destination: 'https://princesinghrana.in/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.princesinghrana.online',
+          },
+        ],
+        destination: 'https://princesinghrana.in/:path*',
+        permanent: true,
+      },
+      {
         source: '/work/ai-cfo',
         destination: '/work/ai-cfo-copilot',
         permanent: true,

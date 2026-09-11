@@ -12,15 +12,16 @@ export const siteConfig = {
   tagline: 'Building SaaS products people want to use.',
   description:
     'Full-stack developer engineering production-ready SaaS platforms, AI copilots, and high-performance web software for startups and ambitious businesses.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.online',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.in',
   locale: 'en_US',
   author: {
     name: 'Prince Singh Rana',
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.online',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.in',
     email: 'princesinghranaofficial@gmail.com',
     role: 'Full-Stack SaaS & AI Product Developer',
   },
   social: {
+    github: 'https://github.com/princesinghranaofficial',
     linkedin: 'https://www.linkedin.com/in/prince-kumar-b2053a200/',
     twitter: 'https://x.com/SinghRana86251',
     twitterHandle: '@SinghRana86251',

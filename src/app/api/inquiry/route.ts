@@ -96,6 +96,7 @@ function isAllowedOrigin(req: NextRequest): boolean {
     const host = req.headers.get('host');
     if (host && originUrl.host === host) return true;
     if (originUrl.hostname === 'localhost' || originUrl.hostname === '127.0.0.1') return true;
+    if (originUrl.hostname === 'princesinghrana.in' || originUrl.hostname.endsWith('.princesinghrana.in')) return true;
     if (originUrl.hostname === 'princesinghrana.online' || originUrl.hostname.endsWith('.princesinghrana.online')) return true;
     if (originUrl.hostname.endsWith('.workers.dev')) return true;
     if (originUrl.hostname === 'princesinghrana.dev' || originUrl.hostname.endsWith('.princesinghrana.dev')) return true;

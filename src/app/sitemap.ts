@@ -13,8 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${baseUrl}`, lastModified: staticLastModified, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${baseUrl}/work`, lastModified: staticLastModified, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${baseUrl}/work/collectai`, lastModified: new Date('2025-02-20T00:00:00.000Z'), changeFrequency: 'monthly', priority: 0.95 },
-    { url: `${baseUrl}/work/ai-cfo-copilot`, lastModified: new Date('2025-02-25T00:00:00.000Z'), changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${baseUrl}/work/collectai`, lastModified: staticLastModified, changeFrequency: 'monthly', priority: 0.95 },
+    { url: `${baseUrl}/work/ai-cfo-copilot`, lastModified: staticLastModified, changeFrequency: 'monthly', priority: 0.95 },
     { url: `${baseUrl}/lab`, lastModified: staticLastModified, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${baseUrl}/services`, lastModified: staticLastModified, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${baseUrl}/about`, lastModified: staticLastModified, changeFrequency: 'monthly', priority: 0.8 },

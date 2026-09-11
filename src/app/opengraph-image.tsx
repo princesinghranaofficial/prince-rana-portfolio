@@ -139,7 +139,7 @@ export default function OgImage() {
             <span>•</span>
             <span>AI Copilots</span>
           </div>
-          <span style={{ color: '#2563eb', fontWeight: 600 }}>princesinghrana.online</span>
+          <span style={{ color: '#2563eb', fontWeight: 600 }}>princesinghrana.in</span>
         </div>
       </div>
     ),

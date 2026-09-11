@@ -146,6 +146,7 @@ export function ProjectCard({ project, className, featured = false }: ProjectCar
             src={project.coverImage}
             alt={`${project.title} - ${project.subtitle}`}
             fill
+            priority={featured}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.02]"
           />
