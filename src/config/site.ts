@@ -4,6 +4,8 @@
  * Enforces single canonical origin without hardcoded local or preview hosts.
  */
 
+export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.in').replace(/\/+$/, '');
+
 export const siteConfig = {
   name: 'Prince Singh Rana',
   professionalName: 'Prince Singh Rana',
@@ -12,11 +14,11 @@ export const siteConfig = {
   tagline: 'Building SaaS products people want to use.',
   description:
     'Full-stack developer engineering production-ready SaaS platforms, AI copilots, and high-performance web software for startups and ambitious businesses.',
-  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.in',
+  url: SITE_URL,
   locale: 'en_US',
   author: {
     name: 'Prince Singh Rana',
-    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://princesinghrana.in',
+    url: SITE_URL,
     email: 'princesinghranaofficial@gmail.com',
     role: 'Full-Stack SaaS & AI Product Developer',
   },

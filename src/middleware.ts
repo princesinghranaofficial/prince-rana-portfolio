@@ -19,6 +19,12 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 308);
   }
 
+  // Redirect legacy workers.dev preview to canonical domain
+  if (host.endsWith('.workers.dev')) {
+    const url = new URL(request.nextUrl.pathname + request.nextUrl.search, 'https://princesinghrana.in');
+    return NextResponse.redirect(url, 308);
+  }
+
   // Redirect HTTP to HTTPS in production if behind proxy
   if (proto === 'http' && (host === 'princesinghrana.in' || host.endsWith('princesinghrana.in'))) {
     const url = new URL(request.nextUrl.pathname + request.nextUrl.search, `https://${host}`);

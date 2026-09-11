@@ -51,6 +51,17 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'prince-rana-portfolio.princesinghranaofficial.workers.dev',
+          },
+        ],
+        destination: 'https://princesinghrana.in/:path*',
+        permanent: true,
+      },
+      {
         source: '/work/ai-cfo',
         destination: '/work/ai-cfo-copilot',
         permanent: true,
