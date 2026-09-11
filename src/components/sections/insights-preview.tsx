@@ -8,12 +8,13 @@ import { Button } from '@/components/ui/button';
 import { insightsData } from '@/data/insights';
 
 export function InsightsPreview() {
-  // Filter only published articles and show top 3
-  const publishedArticles = insightsData
-    .filter((a) => a.status === 'published')
-    .slice(0, 3);
+  // Show published articles; fallback to sample articles during preview so homepage layout remains preserved
+  const publishedArticles = insightsData.filter((a) => a.status === 'published');
+  const previewArticles = (
+    publishedArticles.length > 0 ? publishedArticles : insightsData
+  ).slice(0, 3);
 
-  if (publishedArticles.length === 0) {
+  if (previewArticles.length === 0) {
     return null;
   }
 
@@ -37,7 +38,7 @@ export function InsightsPreview() {
 
         {/* 3 Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12">
-          {publishedArticles.map((article) => (
+          {previewArticles.map((article) => (
             <article
               key={article.id}
               className="rounded-2xl border border-border bg-surface p-6 sm:p-7 flex flex-col justify-between hover:border-border-strong transition-all group shadow-xs"

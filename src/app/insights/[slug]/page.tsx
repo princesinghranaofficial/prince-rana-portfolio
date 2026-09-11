@@ -30,18 +30,16 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return insightsData
-    .filter((article) => article.status === 'published')
-    .map((article) => ({
-      slug: article.slug,
-    }));
+  return insightsData.map((article) => ({
+    slug: article.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const article = insightsData.find((a) => a.slug === slug);
 
-  if (!article || article.status === 'draft') {
+  if (!article) {
     return {
       title: 'Article Not Found | Prince Singh Rana',
     };
@@ -49,10 +47,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const title = article.seo?.title || article.title;
   const description = article.seo?.description || article.description;
+  const isDraft = article.status === 'draft';
 
   return {
     title,
     description,
+    robots: isDraft
+      ? {
+          index: false,
+          follow: true,
+          nocache: true,
+          googleBot: {
+            index: false,
+            follow: true,
+          },
+        }
+      : {
+          index: true,
+          follow: true,
+          googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+          },
+        },
     alternates: {
       canonical: `/insights/${article.slug}`,
     },
@@ -78,24 +98,33 @@ export default async function InsightArticlePage({ params }: PageProps) {
   const { slug } = await params;
   const article = insightsData.find((a) => a.slug === slug);
 
-  if (!article || article.status === 'draft') {
+  if (!article) {
     notFound();
   }
 
-  // Derive related articles (from same category or matching tags, excluding current)
-  const relatedArticles = insightsData
+  // Derive related articles (prefer published articles, fallback to matching sample articles for preview)
+  const publishedRelated = insightsData
     .filter((a) => a.status === 'published' && a.id !== article.id)
     .filter(
       (a) =>
         a.category === article.category ||
         a.tags.some((t) => article.tags.includes(t))
-    )
-    .slice(0, 3);
+    );
+
+  const fallbackRelated = insightsData
+    .filter((a) => a.id !== article.id)
+    .filter(
+      (a) =>
+        a.category === article.category ||
+        a.tags.some((t) => article.tags.includes(t))
+    );
+
+  const relatedArticles = (publishedRelated.length > 0 ? publishedRelated : fallbackRelated).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col selection:bg-accent/20 selection:text-accent">
       <ArticleTracker slug={article.slug} title={article.title} />
-      {/* Structured Data */}
+      {/* Structured Data: Breadcrumbs retained for clean hierarchy */}
       <BreadcrumbJsonLd
         items={[
           { name: 'Home', path: '/' },
@@ -103,14 +132,17 @@ export default async function InsightArticlePage({ params }: PageProps) {
           { name: article.title, path: `/insights/${article.slug}` },
         ]}
       />
-      <ArticleJsonLd
-        headline={article.title}
-        description={article.description}
-        path={`/insights/${article.slug}`}
-        datePublished={article.publishedAt}
-        dateModified={article.updatedAt || article.publishedAt}
-        keywords={article.tags}
-      />
+      {/* Suppress Article JSON-LD schema on draft/sample posts */}
+      {article.status === 'published' && (
+        <ArticleJsonLd
+          headline={article.title}
+          description={article.description}
+          path={`/insights/${article.slug}`}
+          datePublished={article.publishedAt}
+          dateModified={article.updatedAt || article.publishedAt}
+          keywords={article.tags}
+        />
+      )}
 
       <Navbar />
 

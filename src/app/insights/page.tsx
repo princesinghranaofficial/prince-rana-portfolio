@@ -29,10 +29,12 @@ export const metadata: Metadata = {
 };
 
 export default function InsightsPage() {
-  // Only expose published articles
+  // Only expose published articles for search engine structured data
   const publishedArticles = insightsData.filter((a) => a.status === 'published');
+  // For interactive browsing: display published articles, or all articles during preview/demo mode
+  const displayArticles = publishedArticles.length > 0 ? publishedArticles : insightsData;
 
-  const collectionSchema = {
+  const collectionSchema: Record<string, any> = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     '@id': `${absoluteUrl('/insights')}#collectionpage`,
@@ -43,7 +45,11 @@ export default function InsightsPage() {
     isPartOf: {
       '@id': `${siteConfig.url}/#website`,
     },
-    hasPart: publishedArticles.map((a) => ({
+  };
+
+  // Only include published articles in Schema.org hasPart (never draft/sample articles)
+  if (publishedArticles.length > 0) {
+    collectionSchema.hasPart = publishedArticles.map((a) => ({
       '@type': 'Article',
       '@id': `${absoluteUrl(`/insights/${a.slug}`)}#article`,
       headline: a.title,
@@ -56,8 +62,8 @@ export default function InsightsPage() {
         name: a.author.name,
         url: `${siteConfig.url}/`,
       },
-    })),
-  };
+    }));
+  }
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col selection:bg-accent/20 selection:text-accent">
@@ -89,7 +95,7 @@ export default function InsightsPage() {
           </div>
 
           {/* Interactive Index with Filtering & Search */}
-          <InsightsIndexClient articles={publishedArticles} />
+          <InsightsIndexClient articles={displayArticles} />
 
           {/* Bottom Conversion Section */}
           <div className="mt-24 p-8 sm:p-14 rounded-3xl border border-accent/30 bg-surface-50/80 dark:bg-surface-900/80 backdrop-blur-md text-center space-y-6 shadow-xl">

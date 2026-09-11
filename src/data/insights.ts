@@ -18,7 +18,7 @@ export const insightsData: InsightArticle[] = [
     updatedAt: '2026-03-01',
     readingTime: '9 min read',
     featured: true,
-    status: 'published',
+    status: 'draft',
     toc: [
           {
                 id: "the-component-first-trap",
@@ -419,7 +419,7 @@ Structure the core domain first. The user interface will follow naturally.
     publishedAt: '2026-02-24',
     readingTime: '2 min read',
     featured: false,
-    status: 'published',
+    status: 'draft',
     toc: [
       { id: 'the-problem-with-app-level-filtering', title: 'The Risk of Application-Level Filtering', level: 2 },
       { id: 'rls-architecture', title: 'PostgreSQL Row Level Security Architecture', level: 2 },
@@ -566,7 +566,7 @@ describe('Multi-Tenant RLS Penetration Suite', () => {
     publishedAt: '2026-02-18',
     readingTime: '2 min read',
     featured: false,
-    status: 'published',
+    status: 'draft',
     toc: [
       { id: 'the-floating-chatbot-problem', title: 'The Floating Chatbot Problem', level: 2 },
       { id: 'the-context-pipeline', title: 'The 5-Stage Context Pipeline', level: 2 },
@@ -684,7 +684,7 @@ In enterprise software, AI should **propose**, while humans **approve**:
     publishedAt: '2026-02-10',
     readingTime: '2 min read',
     featured: false,
-    status: 'published',
+    status: 'draft',
     toc: [
       { id: 'the-three-layer-hierarchy', title: 'The Three-Layer Information Hierarchy', level: 2 },
       { id: 'progressive-disclosure', title: 'Progressive Disclosure Over Screen Clutter', level: 2 },
@@ -786,7 +786,7 @@ On mobile devices, do not shrink tables into unreadable micro-text with 12 horiz
     publishedAt: '2026-02-04',
     readingTime: '2 min read',
     featured: false,
-    status: 'published',
+    status: 'draft',
     toc: [
       { id: 'the-definition-of-mvp', title: 'Redefining the Minimum Viable Product', level: 2 },
       { id: 'the-scope-matrix', title: 'The Must-Have vs Later Prioritization Matrix', level: 2 },
@@ -889,7 +889,7 @@ Building an MVP in 3–5 weeks is not about writing sloppy code; it is about bui
     publishedAt: '2026-01-28',
     readingTime: '2 min read',
     featured: false,
-    status: 'published',
+    status: 'draft',
     toc: [
       { id: 'the-mental-model', title: 'The Modern Mental Model', level: 2 },
       { id: 'server-first-data-fetching', title: 'Server-First Data Fetching Patterns', level: 2 },
@@ -1009,7 +1009,7 @@ When you execute data logic inside Server Components, your secret API keys (Stri
     publishedAt: '2026-01-20',
     readingTime: '1 min read',
     featured: false,
-    status: 'published',
+    status: 'draft',
     toc: [
       { id: 'why-pure-autonomy-fails', title: 'Why Pure Autonomy Fails in Enterprise', level: 2 },
       { id: 'the-approval-pipeline', title: 'The Propose-Review-Execute Pipeline', level: 2 },
@@ -1113,7 +1113,7 @@ By capturing this metadata in an immutable append-only audit table, enterprise c
     publishedAt: '2026-01-12',
     readingTime: '1 min read',
     featured: false,
-    status: 'published',
+    status: 'draft',
     toc: [
       { id: 'the-happy-path-fallacy', title: 'The Happy-Path Fallacy', level: 2 },
       { id: 'eight-production-criteria', title: '8 Criteria for Production Readiness', level: 2 },
